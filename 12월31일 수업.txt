@@ -42,7 +42,7 @@ title
 key 코드 복붙
 bash here
 >ls //파일 보임.
->git init
+>git init  (폴더를 만들고 init을 입력하면 그 폴더는 깃저장소가 됨)(최초 한번만 입력)
 >git add .
 git config --global user.name "사용자 이름 입력"
 git config --global user.email "이메일 입력"
@@ -56,7 +56,8 @@ git commit -m '아무내용이나'
 git push oringin master
 
 
-내용 추가 및 수정
-1. git add . 
-2. git commit -m 'fix(수정), feat(추가) : 내용'
-3. git push origin master
+###파일 및 내용 다운로드,추가 및 수정###
+1. git clone+깃허브 주소  =   깃허브 내용 다운로드
+2. git add .   =   파일 추가
+3. git commit -m 'fix(수정), feat(추가) : 내용'    =   현재까지 내용 저장
+4. git push origin master       =     깃허브에 업로드
