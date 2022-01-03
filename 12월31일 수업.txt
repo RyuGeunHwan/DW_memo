@@ -54,3 +54,9 @@ git push origin master// 밀다
 내용수정
 git commit -m '아무내용이나'
 git push oringin master
+
+
+내용 추가 및 수정
+1. git add . 
+2. git commit -m 'fix(수정), feat(추가) : 내용'
+3. git push origin master
