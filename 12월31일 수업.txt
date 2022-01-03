@@ -37,6 +37,13 @@ key 생성[SHA256 암호화 방법]
 회사 입사 하면 가장 먼저 해야할것 : 내 PC -보기 - 파일확장명체크 (파일 구별 위한)
 내PC>C드라이브 > 사용자 > .ssh 키 파일 <보관>확장명 체크 해야 볼수 있음.
 
+###파일 및 내용 다운로드,추가 및 수정###
+1. git clone+깃허브 주소  =   깃허브 내용 다운로드
+2. git add .   =   파일 추가
+3. git commit -m '(fix(수정), feat(추가) : 내용)'    =   현재까지 내용 저장
+4. git push origin master       =     깃허브에 업로드
+
+
 ssh keys add new
 title
 key 코드 복붙
@@ -54,10 +61,3 @@ git push origin master// 밀다
 내용수정
 git commit -m '아무내용이나'
 git push oringin master
-
-
-###파일 및 내용 다운로드,추가 및 수정###
-1. git clone+깃허브 주소  =   깃허브 내용 다운로드
-2. git add .   =   파일 추가
-3. git commit -m 'fix(수정), feat(추가) : 내용'    =   현재까지 내용 저장
-4. git push origin master       =     깃허브에 업로드
