@@ -56,8 +56,8 @@ bash here
 >git config --global user.name "사용자 이름 입력"
 >git config --global user.email "이메일 입력"
 (git config --global core.autocrlf true//오류 발생시 입력)
->git commit -m "나 오늘 공부했어!"
 >git remote add origin (파일 올릴 주소 코드)
+>git commit -m "나 오늘 공부했어!"
 >git push origin master 
 
 ★★★형상관리 /서버 /ip /운영체제(소프트웨어)
