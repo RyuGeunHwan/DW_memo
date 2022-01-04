@@ -50,11 +50,11 @@ key 코드 복붙
 bash here
 >ls //파일 보임.
 
-###저장소 첫 파일 올리는 방법###
->git init  (폴더를 만들고 init을 입력하면 그 폴더는 깃저장소가 됨)(최초 한번만 입력)
+#####저장소 첫 파일 올리는 방법#####
+>git init  (최초 한번만 입력)(폴더를 만들고 init을 입력하면 그 폴더는 깃저장소가 됨)
 >git add .
->git config --global user.name "사용자 이름 입력"
->git config --global user.email "이메일 입력"
+>git config --global user.name"사용자 이름 입력"
+>git config --global user.email"이메일 입력"
 (git config --global core.autocrlf true//오류 발생시 입력)
 >git remote add origin (파일 올릴 주소 코드)
 >git commit -m "나 오늘 공부했어!"
