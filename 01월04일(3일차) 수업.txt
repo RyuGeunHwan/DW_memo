@@ -31,6 +31,8 @@
 
 *VScode
 -VScode 검색창 ctrl+shift+P
+-언어 바꾸기 
+->ctrl+shift+P(검색창)->display->ko or en
 
 ###VScode에서 github 업로드 방법###
 -Explorer(ctrl+shift+E) 수정할 내용 수정 후에 ctrl+S(저장)
@@ -39,3 +41,4 @@
 ->... 버튼 클릭 후 commit->commit 클릭 
 ->다시 ... 버튼 클릭 후 push->push to 클릭
 ->위에 보이는 주소 클릭 하면 업로드 완료
+
