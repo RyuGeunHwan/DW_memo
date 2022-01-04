@@ -66,3 +66,4 @@ bash here
 -git commit -m '아무내용이나'
 -git push oringin master
 
+나 오늘 아주 좋아
