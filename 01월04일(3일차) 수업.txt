@@ -33,6 +33,7 @@
 -VScode 검색창 ctrl+shift+P
 -언어 바꾸기 
 ->ctrl+shift+P(검색창)->display->ko or en 입력
+-ctrl + , 누르면 설정창 열림
 
 ###VScode에서 github 업로드 방법###
 -Explorer(ctrl+shift+E) 수정할 내용 수정 후에 ctrl+S(저장)
