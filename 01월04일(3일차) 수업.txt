@@ -24,7 +24,7 @@
 -ssh new key 클릭-> 타이틀 작성 -> git bash들어 간 후 
   ->ssh-keygen -t rsa -C 'h46344@naver.com(github 가입했던 이메일)' ->enter
   ->비밀번호 입력 -> 다시 비밀번호 입력 -> 내pc->C드라이브->사용자
-  ->타이틀이름으로 된 파일 클릭->.ssh파일 클릭
+  ->.ssh 파일 클릭->.ssh파일 클릭
   ->id_rsa.pub(메모장으로 열기)->복사 후 github 키 입력 창에 (입력 커서는 끝에두기) 붙여넣기
   ->add ssh key 클릭 -> 비밀번호 입력
 
