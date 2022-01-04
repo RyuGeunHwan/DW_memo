@@ -62,6 +62,7 @@ bash here
 
 ★★★형상관리 /서버 /ip /운영체제(소프트웨어)
 내용수정
-git commit -m '아무내용이나'
-git push oringin master
+-git add .
+-git commit -m '아무내용이나'
+-git push oringin master
 
