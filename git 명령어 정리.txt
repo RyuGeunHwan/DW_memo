@@ -40,3 +40,5 @@
     4-1. git config --global core.autocrlf true
 
 5. 강제로 push 하기 : git push origin +master
+
+6. git remote -v : 업로드 주소 확인 가능
