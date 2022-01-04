@@ -36,6 +36,7 @@
 -ctrl + , 누르면 설정창 열림
 -VScode 에서 README.md 라는 파일을 만들게 되면 github에서는
   README.md에 작성한 내용이 해당 저장소에 대한 설명을 기입하도록 하고 있음.
+  즉 저장소 맨 처음에 노출하게 되어있는 파일을 말함. 
 
 ###VScode에서 github 업로드 방법###
 -Explorer(ctrl+shift+E) 수정할 내용 수정 후에 ctrl+S(저장)
