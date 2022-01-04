@@ -42,3 +42,6 @@
 5. 강제로 push 하기 : git push origin +master
 
 6. git remote -v : 업로드 주소 확인 가능
+ex)origin  https://github.com/RyuGeun/DW_memo.git (fetch)
+   origin  https://github.com/RyuGeun/DW_memo.git (push)
+
