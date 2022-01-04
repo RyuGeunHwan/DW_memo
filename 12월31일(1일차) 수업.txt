@@ -65,5 +65,3 @@ bash here
 git commit -m '아무내용이나'
 git push oringin master
 
-
-곧 점심시간!
