@@ -29,3 +29,12 @@
   ->add ssh key 클릭 -> 비밀번호 입력
 
 
+*VScode
+-VScode 검색창 ctrl+shift+P
+###github 업로드 방법###
+-Explorer(ctrl+shift+E) 수정할 내용 수정 후에 ctrl+S(저장)
+->source control에 카운트가 뜸 ->source control들어가서 +버튼 누른 후 
+->message 창에 'feat or fix : 내용' 입력
+->... 버튼 클릭 후 commit->commit 클릭 
+->다시 ... 버튼 클릭 후 push->push to 클릭
+->위에 보이는 주소 클릭 하면 업로드 완료
