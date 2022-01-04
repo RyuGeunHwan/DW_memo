@@ -31,7 +31,8 @@
 
 *VScode
 -VScode 검색창 ctrl+shift+P
-###github 업로드 방법###
+
+###VScode에서 github 업로드 방법###
 -Explorer(ctrl+shift+E) 수정할 내용 수정 후에 ctrl+S(저장)
 ->source control에 카운트가 뜸 ->source control들어가서 +버튼 누른 후 
 ->message 창에 'feat or fix : 내용' 입력
