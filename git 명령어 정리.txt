@@ -45,3 +45,4 @@
 ex)origin  https://github.com/RyuGeun/DW_memo.git (fetch)
    origin  https://github.com/RyuGeun/DW_memo.git (push)
 
+여기서 이것을 추가해서 VScode로 pull작업을 해보겠다.
