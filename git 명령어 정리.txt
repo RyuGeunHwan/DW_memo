@@ -45,4 +45,3 @@
 ex)origin  https://github.com/RyuGeun/DW_memo.git (fetch)
    origin  https://github.com/RyuGeun/DW_memo.git (push)
 
-너두? 야너두!
