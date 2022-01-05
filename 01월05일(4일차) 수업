@@ -37,6 +37,7 @@
 -mySQL안에는 많은 DB(데이터베이스)가 있고 
  DB안에는 많은 table들이 있고
  table안에 우리가 쓰는 data가 있는 것
+
 -DB안에 table들은 모두 관계가 있다
  [table=관계형 데이터 베이스(=### RDB ###)]
 -블록체인은 비관계형 데이터 베이스다.
@@ -65,9 +66,38 @@
 -GRANT : 특정 사용자에게 권한 부여
 -REVOKE : 특정 사용자 권한 회수
 
-*데이터베이스 
+*데이터베이스 명령순서
 -SELECT
  컬럼명
  -from  테이블 이름
- -where PK(프라이머리 키)
+ -where PK(Primary key))
+
  -컴퓨터가 쿼리 읽는 순서 from->where->SELECT
+
+##DBeaver 명령순서
+/* 사원번호가 7839인 사람의 직업 조회*/
+
+    select job from emp where empno=7839;
+
+/* 사원번호가 7900인 사람의 이름과 직업 조회*/
+
+    select ename, job from emp where empno=7900;
+
+/* 사원번호가 7369인 사람의 이름과 직업과 급여를 조회하시오 */
+
+    select
+	    ename, 
+	    job, 
+	    sal 
+    from emp 
+    where empno=7369; /*조건 조회*/
+    /* 쿼리 순서 : from > where > select */
+
+/*모든 컬럼 조회*/
+
+    select * from emp;
+
+# trollface :trollface:
+
+* vscode emoticom
+https://itinerant.tistory.com/60
