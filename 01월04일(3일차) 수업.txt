@@ -7,10 +7,8 @@
 *파일 뒤에 .exe는 실행 프로그램이라는 것
 -jdk-12.0.2_windows-x64_bin.exe (자바 실행 프로그램)
 
-*자바 설치 방법
+*자바 설치, 설정 방법
 -설치 후 내pc->C드라이브->Program Files->java파일 들어가서 다운로드 확인
-
-*자바 설정 방법
 -내pc->마우스 오른쪽 클릭 -> 속성 -> 고급시스템설정
    -> 환경 변수 -> 시스템변수(아래쪽)의 새로만들기 클릭 -> 변수 이름 JAVA_HOME(임의로 설정)
    -> C드라이브->Program Files->java-> JDK(Java Development kit)가 설치된 폴더 경로로 들어가기
