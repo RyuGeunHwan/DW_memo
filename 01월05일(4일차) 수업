@@ -32,3 +32,42 @@
 -구글 검색사이트 추천(되도록이면 영어로 검색하는거 추천)
  1순위 stackoverflow.com 2순위 velog.io 3순위 맨 위뜨는 추천 사이트 
 (구글 검색->어떻게 하는지 how to ---- in -- / 무엇인지 what is ----)
+
+### 
+-mySQL안에는 많은 DB(데이터베이스)가 있고 
+ DB안에는 많은 table들이 있고
+ table안에 우리가 쓰는 data가 있는 것
+-DB안에 table들은 모두 관계가 있다
+ [table=관계형 데이터 베이스(=### RDB ###)]
+-블록체인은 비관계형 데이터 베이스다.
+
+***데이터 타입
+*int = 숫자
+*VARCHAR = 문자
+
+단위 크기
+-byte > bit(=bit는 컴퓨터 저장공간의 최소단위)
+-1byte = 8bit
+-1byte = 8bit = 256(2의 8승 - 이차함수)
+
+###DDL###(=Data Definition Language) 데이터 정의 언어
+-CRATE TABLE <table_name> : table 생성
+-DROP TABLE <table_name> : table 삭제
+-ALTER TABLE <table_name> : table 수정(테이블 이름 변경할때 씀)
+
+###DML###(=Data Manipulation Language) 데이터 조작 언어
+-SELECT : 데이터 조회
+-DELETE : 데이터 삭제
+-UPDATE : 데이터 수정
+-INSERT : 데이터 생성
+
+*DCL (=Data Control Language) 데이터 제어 언어
+-GRANT : 특정 사용자에게 권한 부여
+-REVOKE : 특정 사용자 권한 회수
+
+*데이터베이스 
+-SELECT
+ 컬럼명
+ -from  테이블 이름
+ -where PK(프라이머리 키)
+ -컴퓨터가 쿼리 읽는 순서 from->where->SELECT
