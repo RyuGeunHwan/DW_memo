@@ -1,4 +1,13 @@
 01월 05일 수업
+#mySQL 설치방법
+ -C++프로그램 설치(서버에 다운로드 안되어있을경우)
+ -mySQL설치 비밀번호 입력을 제외한 나머지 all next클릭
+-DBeaver 들어가서 상단 데이터베이스 클릭 후 새데이터베이스 연결->mySQL연결
+-상단 SQL편집기 클릭
+-좌측에 보이는 Databases 왼쪽마우스 클릭후 Create New Databases 들어가 데이터베이스 생성
+-좌측에 보이는 localhost 왼쪽마우스 클릭 Edit connection 클릭 후 Database 에 이름설정
+-테이블 생성하고 작업시작!
+
 *IP종류
 -사설IP (private IP) 여러사람들이 공유 할 수 있는 장소에 설치되어 있는 IP
  특징 - 라우터(=공유기)가 사람들에게 주는 임의적인 IP주소는 모두 다르다 
