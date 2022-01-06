@@ -1,4 +1,3 @@
-.md
 01월 05일 수업
 *IP종류
 -사설IP (private IP) 여러사람들이 공유 할 수 있는 장소에 설치되어 있는 IP
@@ -76,9 +75,6 @@
  -컴퓨터가 쿼리 읽는 순서 from->where->SELECT
 
  ### 테이블 구성도
-
- https://github.com/hyunsangwon/DW_memo/blob/ab884ec1e820650dd33ebd1e8e474b815c48f655/SQL/SQL_1%EC%9D%BC%EC%B0%A8.md#L28
-
 - PK(Primary Key)는 고유 컬럼으로 고유한 데이터만 올 수 있다.
     ex) 사원 번호, 주민
 - 컬럼 : 테이블을 구성하는 각각의 열에 위치한 정보.
