@@ -6,7 +6,7 @@
 -상단 SQL편집기 클릭
 -좌측에 보이는 Databases 왼쪽마우스 클릭후 Create New Databases 들어가 데이터베이스 생성
 -좌측에 보이는 localhost 왼쪽마우스 클릭 Edit connection 클릭 후 Database 에 이름설정
--테이블 생성하고 작업시작!
+-테이블 생성하고(코드 입력 후 실행 한 다음 Alt + X 까지 입력) 작업시작!
 
 *IP종류
 -사설IP (private IP) 여러사람들이 공유 할 수 있는 장소에 설치되어 있는 IP
