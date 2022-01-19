@@ -70,3 +70,6 @@
 		돼지국밥 = 돼지국밥 + (콩나물국밥 * 3);
 		//=>돼지국밥 => 21,000
 		
+	
+
+		![01월19일 new 선언 , 필드변수](https://user-images.githubusercontent.com/96895717/150082495-439ea3c3-2a22-4b5b-a8ba-acbf0d258c04.jpg)
