@@ -5,7 +5,7 @@
 - counting :star: 밤하늘에 퍼얼~
 - 안녕하세요 반갑습니다. 
 - 
-![header](https://capsule-render.vercel.app/api?type=slice)
+![header](https://capsule-render.vercel.app/api?type=egg)
 
 
 
