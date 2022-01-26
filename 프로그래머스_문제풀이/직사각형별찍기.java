@@ -29,38 +29,38 @@ public class 직사각형별찍기 {
 	// 10
 	// 10
 	// */
-    
-	public static void main(String[] args) {
-		int n = 5;
-		int m = 3;
-		String x = "";
-		String y = "";
-		System.out.println("x: " + m + " y: " + n);
-		if (n <= 1000 && m <= 1000) {
-			for (int i = 0; i < m; i++) {// 세로 줄 = x축
-				x = "*";
-				for (int j = 1; j < n; j++) {// 가로 줄 = y축
-					y = "*";
-					System.out.print(y);
-				}
-				System.out.println(x);
-			}
-		}
-	}
+
+	// public static void main(String[] args) {
+	// 	int n = 5;
+	// 	int m = 3;
+	// 	String x = "";
+	// 	String y = "";
+	// 	System.out.println("x: " + m + " y: " + n);
+	// 	if (n <= 1000 && m <= 1000) {
+	// 		for (int i = 0; i < m; i++) {// 세로 줄 = x축
+	// 			x = "*";
+	// 			for (int j = 1; j < n; j++) {// 가로 줄 = y축
+	// 				y = "*";
+	// 				System.out.print(y);
+	// 			}
+	// 			System.out.println(x);
+	// 		}
+	// 	}
+	// }
 	
 	//	 프로그래머스 직사각형 별찍기
-	//	class Solution {
-	//		public static void main(String[] args) {
-	//			Scanner sc = new Scanner(System.in);
-	//			int a = sc.nextInt();
-	//			int b = sc.nextInt();
-	//			for (int i = 0; i < b; i++) {
-	//				for (int j = 0; j < a; j++) {
-	//					System.out.print("*");
-	//				}
-	//				System.out.println("");
-	//			}
-	//		}
-	//	}
+		class Solution {
+			public static void main(String[] args) {
+				Scanner sc = new Scanner(System.in);
+				int a = sc.nextInt();
+				int b = sc.nextInt();
+				for (int i = 0; i < b; i++) {
+					for (int j = 0; j < a; j++) {
+						System.out.print("*");
+					}
+					System.out.println("");
+				}
+			}
+		}
 
 }
