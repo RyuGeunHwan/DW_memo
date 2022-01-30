@@ -19,22 +19,22 @@
 	}
 
 	public static int getSum(int start, int end) {
-		// int array[] = { 3, 8, 9 };
-		// int max = 0;
-		// if (start < 0) {
-		// end = array.length;
-		// for (int i = start; i < end; i++) {
-		// if (max >= 10) {
-		// if (array[i] > max) {
-		// max = array[i];
-		// return max;
-		// }
-		// return 0;
-		// }
-		// }
-		// }
+		int array[] = { 3, 8, 9 };
+		int max = 0;
+		if (start < 0) {
+		end = array.length;
+		for (int i = start; i < end; i++) {
+		if (max >= 10) {
+		if (array[i] > max) {
+		max = array[i];
+		return max;
+		}
+		return 0;
+		}
+		}
+		}
 		// 로직 구현
-		// return max;
+		return max;
 
 	public static void main(String[] args) {
 		int start = 0;
