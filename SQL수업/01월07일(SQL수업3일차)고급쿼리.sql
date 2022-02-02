@@ -8,7 +8,9 @@ null 처리하는 방법
 -ifnull은 데이터베이스 마다 입력하는것이 다름
 >- ifnull(컬럼, null을 대체할 값을 입력)은 ##select절에 오는 것   
 <-> is (not) null은 where 절에 오는 코드  
-------ex)select   
+------
+ex)
+select   
 ename,  
 ifnull(comm,100)  
 from emp   
