@@ -19,3 +19,29 @@ LIMIT 데이터 row 강제로 자를 때 (break와 같은 의미)
 
 SQL 쿼리 실행 순서
 from -> where -> group by -> having -> select -> order by 
+
+--------
+
+GROUP BY 는 SELECT절에 무적권 집계 함수와 같이 사용(sum(), avg(), max(), min(), count())
+***SQl 중복제거!
+GROUP BY를 사용하지 않고 중복만 제거하고 싶다.
+SELECT 
+*distinct(컬럼명)
+
+---------
+
+문제에 **~~별로 (조회 하시오.), **~~별 (~~을 조회하시오.)
+별로, 별 이 들어간 문제면 무조건 GROUP BY 사용!!!
+
+---------
+
+**ORDER BY에 숫자가 오는 것은 SELECT절의 몇번째 컬럼 순서로 정렬 할것 인지 말하는것!
+이유 - ORDER BY의 쿼리 순서가 제일 늦기 때문에 SELECT절에 무엇이 몇번째 인지 알기 때문에.
+
+---------
+
+SQL or관련
+단어를 세가지 이상 사용할 때
+***in('류근환','홍길동','아이유','호랑이')
+= 같은 의미
+ex) name = '류근환' or name = '홍길동' or name = '아이유' or name = '호랑이'
