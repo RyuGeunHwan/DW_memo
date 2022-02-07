@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/*         
+***position을 움직이고 싶을때!
+    CSS :
+ 태그마다 position을 가지고 있음.
+  position 디폴트값이 static.
+
+  1. static(디폴트) : 위치를 지정하지 않을 때.
+  2. relative : 원래 자리 기준으로 움직임. 
+
+- position: relative;
+ left: 100px = 자리에서부터 왼쪽 100px만큼 오른쪽으로 이동
+ right: 100px = 자리에서부터 오른쪽 100px만큼 오른쪽으로 이동
+ top: 100px = 자리에서부터 위 100px만큼 아래로 이동 
+ bottom: 100px = 자리에서부터 아래 100px만큼 위로 이동
+ */
+
+        .hello{
+            position: relative;
+            left: 300px;
+            width: 50%;
+            height: 150px;
+            background-color: rgb(250, 3, 3);
+        }
+        .hello2{
+            position: relative;
+            top: 200px;
+            width: 55%;
+            height: 150px;
+            background-color: rgb(247, 151, 8);
+        }
+        .hello3{
+            width:50%;
+            height: 150px;
+            background-color: rgb(224, 248, 9);
+        }
+    </style>
+</head>
+<body>
+    <!-- div 태그는 공간(구역)을 의미 -->
+    <!-- 태그에 스타일을 입혀주는 것을 CSS라고 한다. -->
+    <!-- title태그 아래에 <style></style> 태그를 입력 후 style할 태그와 * .변수이름 + {} *를 이용하여 전체 적용 -->
+    <!-- 원하는 구역만 적용 할거면 변수 사용(class를 사용) -->
+    <div class="hello">안녕하세요</div>
+    <div class="hello2">반갑습니다</div>
+    <div class="hello3">류근환입니다</div>
+</body>
+</html>
+
