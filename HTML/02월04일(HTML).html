@@ -128,7 +128,8 @@ HTML : 태그(<>)로 이루어진 언어
         maxlength="3"
       />
       회원 이메일 : <input type="email" placeholder="이메일을 입력하시오" />
-      <input type="submit" />
+      <input type="submit" value="이동" /><input type="reset" value="다시입력">
+      <!-- submit버튼 이름 바꾸는 방법 value** -->
     </form>
 
     ------------------------------------------------------
@@ -136,7 +137,7 @@ HTML : 태그(<>)로 이루어진 언어
     <h3>data list tag (관련 검색어)</h3>
     <!-- data list tag -->
     <label for="movie">영화 추천해주세요~</label>
-    <input id="movie" type="text" list="movie-list" />
+    <input id="movie" type="text" list="movie-list" placeholder="영화 추천.."/>
     <!-- input의 list 이름과 datalist의 id 이름이 같은곳에 datalist가 생성됨 -->
     <datalist id="movie-list">
       <option value="8월의 크리스마스"></option>
@@ -147,7 +148,34 @@ HTML : 태그(<>)로 이루어진 언어
       <option value="범죄와의전쟁"></option>
     </datalist>
 
+    <label for="cinema">영화관 위치</label>
+    <input type="text" id="cinema" list="movie_cinema" placeholder="영화관 위치..">
+    <datalist id="movie_cinema" >
+      <option value="관저동 롯데시네마"></option>
+      <option value="가수원동 CGV"></option>
+      <option value="둔산동 메가박스"></option>
+    </datalist>
+<br>
+    <label for="커피종류">커피종류</label>
+    <select name="" id="">
+      <option value="none">---선택하시오---</option>
+      <option value="아메리카노">아메리카노</option>
+      <option value="돌체라떼">돌체라떼</option>
+      <option value="카라멜마끼야또">카라멜마끼야또</option>
+    </select>
+<br>
+    <form action="">
+    <label for=""><input type="checkbox" value="3,000원" id="아메리카노" checked> 아메리카노(3,000원)</label>
+    <input type="checkbox" id="돌체라떼"> 돌체라떼(4,000원)
+    <input type="checkbox" id="카라멜마끼야또" > 카라멜마끼야또(5,000원)
+    <p><input type="submit" value="Submit"></p>
+    </form>
+    <br>
 
+    <input type="radio" value="과일"> 바나나
+    <input type="radio" value="과일" checked> 딸기
+    <input type="radio" value="과일"> 사과
+    <input type="radio" value="과일"> 키위
     <br />
     <!-- br은 줄 바꿈 명령어 -->
     ------------------------------------------------------
