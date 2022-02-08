@@ -1,0 +1,46 @@
+# DML
+
+## insert : 데이터 저장
+
+- 작성법.
+  > 1.  INSERT INTO emp(ename(String), sal(int), job(String))
+        VALUES('홍길동', 3000, 'manager')
+
+> 2.  해당 테이블(emp)에 데이터(ename,sal,job,...를 모두 넣으면 ,테이블 뒤 괄호 생략
+
+     INSERT INTO emp
+     VALUES('홍길동', 3000, 'manager',...)
+
+## insert할 때 주의 할점 :
+
+> 1.  테이블에 job컬럼이 not null이면,
+
+    insert  할때 무조건 데이터를 넣어야 함.
+
+> 2.  테이블에 기본키 설정이 auto increment가 아니라면,
+
+    기본키 데이터를 넣어야 함.
+
+> 3.  commit; 을 해야 최종 insert가 됨.
+
+    (DBeaver같은 프로그램은 auto commit으로 설정되어 있음.
+    처음 회사 들어가면 auto commit을 꺼줘야함.)
+
+## delete : 데이터 삭제
+
+- 작성법.
+  > 1.  DELETE FROM dept
+      WHERE deptno = 70
+
+## delete할 때 주의 할점 :
+
+> 1.  해당 컬럼이 ON DELETE CASCADE 로 설정되어 있으면, \*\*\*연관된 컬럼 모두 삭제 됨.
+> 2.  commit; 을 해야 최종 delete가 됨.
+
+    (DBeaver같은 프로그램은 auto commit으로 설정되어 있음.
+    처음 회사 들어가면 auto commit을 꺼줘야함.)
+
+    실제로는 데이터 삭제 X
+    삭제여부 컬럼을 만듬
+    ex)컬럼이름 : 회원탈퇴여부
+    데이터: 'y' or 'n'
