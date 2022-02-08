@@ -1,0 +1,99 @@
+<!-- 
+***position
+
+-position의 디폴트값은 static : 안움직임.
+- position relative
+ 1.움직일 수 있음.
+ *2.원재 자기 자리에서부터 움직임. 
+-->
+
+<!-- 
+***absolute
+- 자기 마음대로 행동함. 마음대로 움직임(조직 생활을 하지 못해, 개인주의) 
+    *만약에 부모 태그가 있다면 부모 태그 기준으로 움직임
+    ->조건 = 부모가 relative 일 경우에만!!!! 부모 기준으로 움직임!
+-->
+
+<!-- *** fixed : 고정된 위치 / 스크롤을 내려도 계속 고정되어 있음(상담 아이콘) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* https://htmlcolorcodes.com/ html색깔 설정 */
+
+      .A {
+        background-color: rgb(252, 7, 7);
+        width: 100px;
+        height: 100px;
+      }
+      .B {
+        position: relative;
+        top: 0px;
+        left: 100px;
+        background-color: rgb(243, 141, 8);
+        width: 100px;
+        height: 100px;
+      }
+      .C {
+        /* position: absolute; 언제 사용 하냐면? 상담 아이콘 / 사이트 들어갔을 때 하루동안 보지 않기 광고or안내문 페이지를 사용할때 */
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        background-color: rgb(246, 250, 4);
+        width: 100px;
+        height: 100px;
+      }
+      .D {
+        position: fixed;
+        background-color: #05f705;
+        width: 100px;
+        height: 100px;
+        bottom: 0px;
+        right: 0px;
+      }
+      /* position: fixed; 고정되어 있는지 확인 하는 방법 */
+      body {
+        height: 300vh;
+      }
+
+      .mom {
+        position: relative;
+        left: 50px;
+        bottom: 0px;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        /* 
+        ***absolute
+        - 자기 마음대로 행동함. 마음대로 움직임(조직 생활을 하지 못해, 개인주의) 
+         *만약에 부모 태그가 있다면 부모 태그 기준으로 움직임
+        ->조건 = 부모가 relative 일 경우에만!!!! 부모 기준으로 움직임!
+        */
+      }
+      .sun {
+        position: absolute;
+        left: 30px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(120, 8, 248);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="A">A 구역</div>
+    <div class="B">B 구역</div>
+    <div class="C">C 구역</div>
+    <div class="D">D 구역</div>
+
+    <div class="mom">
+      부모
+      <div class="sun">자식</div>
+    </div>
+  </body>
+</html>
+
