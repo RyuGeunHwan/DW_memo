@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .contact-form select {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+      }
+      .contact-form {
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+        margin: 50px auto;
+        width: 350px;
+        text-align: center;
+      }
+      .contact-form h2 {
+        background-color: #efefef;
+        margin-top: 0;
+        padding: 10px;
+      }
+      .contact-form input {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+      }
+      .contact-form input[type=checkbox]  {
+        width: 10%;
+        margin: 10px auto;
+        padding: 10px;
+      }
+      .contact-form textarea {
+        width: 90%;
+        margin: 5px auto;
+        padding: 10px;
+        height: 80px;
+      }
+      .submit-btn {
+        cursor: pointer;
+        width: 150px;
+        margin-left: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contact-form">
+      <h2>카페 메뉴</h2>
+      <!-- 웹서버에 전송하는 방법 2가지
+      1. get(public)
+    (*http header에 전송)
+      2. post(private)
+    (*http header에 전송) -->
+      <form action="웹서버 주소" method="post">
+        <!-- HTML(안드로이드)하고 데이터베이스 연동 불가능 / 그래서 웹서버(form action="웹서버 주소")에 전송을 해야 함. -->
+        <!-- form태그 안에 있는 태그들을 form의 웹주소로 전송 -->
+        <select box name="menu" id="menu" >
+          <option value="--Please choose an menu--">--Please choose an menu--</option>
+          <option value="아메리카노">아메리카노</option>
+          <option value="헤이즐넛">헤이즐넛</option>
+          <option value="돌체라떼">돌체라떼</option>
+        </select box>
+        
+
+        <!-- 
+        1. required : required이 포함된 태그의 입력란에는 무조건 입력을 해야함./ 입력을 하지 않으면 안내문이 뜸.
+        2. disabled : disabled이 포함된 태그는 서버에 전송 안됨. / 문자 입력 안됨.
+        3. maxlength는 입력 문자의 길이를 제한
+        4. max는 number타입의 수량을 제한
+        -->
+
+        <input  type="number" id="count"  placeholder="수량" max="5" required >
+        <input type="text" id="name" placeholder="회원이름 입력란..." disabled >
+        <input type="password" id="password" placeholder="회원비밀번호 입력란..." required>
+        <input type="checkbox" id="광고수신 여부" checked required> 광고수신 여부
+        <input type="email" id="email" placeholder="이메일 입력란..." required> 
+        <textarea name="message" placeholder="주문시 메모 입력란..." required ></textarea>
+        <input type="submit" value="주문">
+        <!-- form태그 안에 submit이 아닌 button을 만들면 서버에 전송 불가능
+        button이 아닌 submit으로 작성해야 웹서버에 전송 가능 -->
+      </form>
+    </div>
+  </body>
+</html>
