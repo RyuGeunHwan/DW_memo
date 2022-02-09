@@ -36,19 +36,6 @@ body {
   padding: 10px;
   border-color: white;
 }
-.button {
-  border: dotted;
-  cursor: pointer;
-  background-color: black;
-  color: aliceblue;
-  border-color: black;
-}
-.button1 {
-  border: solid;
-  border-color: snow;
-  background-color: black;
-  color: aliceblue;
-}
 .train-form textarea {
   border-radius: 10px;
   width: 100%;
@@ -76,4 +63,19 @@ body {
   background-size: 100%;
   position: fixed;
   padding: 0px 50px 100px;
+}
+/* 예약 완료 */
+/* class안에 class를 호출 하려면 (.부모클래스 + .자식클래스{}) */
+.train-form .button {
+  border: 5px solid;
+  background-color: rgb(42, 111, 240);
+  color: aliceblue;
+  border-color: rgb(6, 89, 243);
+}
+/* 예약 취소 */
+.train-form .button1 {
+  border: 5px solid;
+  border-color: rgb(243, 11, 11);
+  background-color: rgb(238, 45, 45);
+  color: aliceblue;
 }
