@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+body {
+  background-image: url(크리스범스테드.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.train-form select {
+  text-align: center;
+  border-radius: 10px;
+  width: 370px;
+  height: auto;
+  margin: 10px auto;
+  padding: 10px;
+}
+.train-form {
+  border-radius: 10px;
+  text-align: center;
+  font-size: large;
+  font-weight: 800;
+  color: rgb(12, 12, 12);
+  border: 3px solid rgb(199, 175, 175);
+  width: 350px;
+  height: auto;
+  padding: 10%;
+  margin: 10% auto 10%;
+}
+.train-form input {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+  padding: 10px;
+  border-color: white;
+}
+.button {
+  border: dotted;
+  cursor: pointer;
+  background-color: black;
+  color: aliceblue;
+  border-color: black;
+}
+.button1 {
+  border: solid;
+  border-color: snow;
+  background-color: black;
+  color: aliceblue;
+}
+.train-form textarea {
+  border-radius: 10px;
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+  height: 80px;
+}
+.submit {
+  border-color: snow;
+  border: solid;
+  background-color: black;
+  color: rgb(247, 3, 3);
+}
+.베넷 {
+  width: 200px;
+  height: 200px;
+  top: 0px;
+  right: 0px;
+  font-weight: 900;
+  text-align: center;
+  color: aliceblue;
+  border: solid;
+  background-image: url(크리스범스테드1.jpg);
+  border-color: black;
+  background-size: 100%;
+  position: fixed;
+  padding: 0px 50px 100px;
+}

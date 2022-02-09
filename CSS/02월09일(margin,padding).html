@@ -1,0 +1,83 @@
+<!-- 
+***position
+- static : 돌,움직이지 않음
+- relative : 원래기준에서 움직임
+- absolute : 자기 마음대로 움직임
+            조건) 부모 태그의 position이 relative이면 
+            부모태그 기준으로 움직임.
+- fixed : 고정( 스크롤 내릴 때 마다 계속 따라옴 )
+ -->
+
+<!-- 
+***margin,padding
+-div(박스 태그)
+공통점 :  박스 간격 조절
+margin : 부모박스와 부모박스 간격 조절 
+          부모와 부모간의 거리를 두고 싶으면 부모태그 CSS padding 작성
+1. margin 작성법 : 
+- margin : 10px; //동서남북 모두 10px씩 패딩.
+- margin : 5px(위) 10px(오른쪽, 왼쪽) 0(아래);
+- margin : 5px(위&아래) 10px(오른쪽&왼쪽);
+- margin : 10px(위) 10px(오른쪽) 10px(아래) 10px(왼쪽); //첫번째와 같지만 조금 더 정밀하게 정할 수 있음.
+
+padding : 부모박스 안에 있는 자식 박스 간격 조절
+          부모와 자식간의 거리를 두고 싶으면 부모태그 CSS padding 작성
+1. padding 작성법 : 
+- padding : 10px; //동서남북 모두 10px씩 패딩.
+- padding : 5px(위) 10px(오른쪽, 왼쪽) 0(아래);
+- padding : 5px(위&아래) 10px(오른쪽&왼쪽);
+- padding : 10px(위) 10px(오른쪽) 10px(아래) 10px(왼쪽); //첫번째와 같지만 조금 더 정밀하게 정할 수 있음.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* *은 html전체를 태그 함! */
+      /* 브라우저마다 여백의 크기가 다르기 때문에 초기세팅을 아래와 같이 해준다. */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .login-form {
+        /* border: 5px(테두리 굵기) solid(테두리 종류) red(테두리 색깔); */
+        border: 5px solid black;
+        /* 위, 오른쪽, 아래, 왼쪽 10px씩 */
+        /* padding: 10px; */
+        /* 위, 오른쪽&왼쪽, 아래 */
+        padding: 40px 15px 0px;
+        width: 200px;
+        height: 200px;
+      }
+      .login-form input {
+        /* input은 logint-form의 자식이기때문에 부모인login-form까지의 100%까지만 */
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+      }
+
+      body {
+        height: 300vh;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div.(class이름) + Enter = <div class="container"></div> -->
+    <div class="pupup"></div>
+    <!-- div = 박스,객체 -->
+    <div class="container">
+      <!-- container는 login-form의 부모태그 -->
+      <!-- login-form안에는 로그인과 관련된 태그들만 온다. -->
+      <div class="login-form">
+        <!-- login-form은 input의 부모태그 -->
+        <input type="text" value="안녕하세요" />
+        <input type="text" value="안녕하세요" />
+      </div>
+    </div>
+  </body>
+</html>
