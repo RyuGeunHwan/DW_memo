@@ -118,7 +118,10 @@
 ---
 
 - # HTML - form get,host
+
   공통점 : 서버에 데이터를 전송하는 방법.  
   (==http 메소드(함수) 종류 중에 해당함.)
   GET : pulbic 전송
   POST : private 전송
+
+  - # SEO = 검색 엔진 최적화
