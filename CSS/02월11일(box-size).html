@@ -1,0 +1,53 @@
+<!-- CSS기본개념 정리 -->
+<!-- 
+1. position
+1-1 static 
+1-2 relative
+1-3 absolute
+1-4 fixed
+
+2. padding, margin
+2-1 padding : 부모와 *자식 간격 조절(부모에 작성)
+2-2 margin : 부모와 *부모 간격 조절(부모에 작성)
+
+3. box-size 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Indexstyle.css" />
+    <title>Document</title>
+    <style>
+      * {
+        /* 브라우저마다 공백이 있기 때문에 margin,padding 0으로 주는거임 */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box-container {
+        width: 20%;
+        height: 300px;
+        border: 10px solid rgb(14, 138, 20);
+      }
+      .box-data {
+        width: 100%;
+        border: 10px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- div를 box태그라고도 함. -->
+      <div class="box-container">
+        <p>box 영역 입니다.</p>
+        <div class="box-data">
+          <p>box-data 영역 입니다.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

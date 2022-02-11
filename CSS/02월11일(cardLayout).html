@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        border: solid;
+        background-color: rgb(68, 241, 111);
+        margin: 50px auto 0;
+      }
+      .card {
+        display: inline-block;
+        /* display = 보여달라는 뜻 / display: inline-block(가로로 보여달라는 뜻) */
+        border-radius: 8px;
+        height: 400px;
+        width: 260px;
+        margin: 20px;
+        overflow: hidden;
+        /* overflow : 컨텐츠가 너무 커서 요소내에 모두 보여주기 힘들 때 사용. */
+        /* overflow 종류 :   visible(기본 값)
+                            hidden(넘치는 부분을 자름)
+                            scroll(스크롤 바 추가) */
+        box-shadow: 15px 15px 50px rgb(14, 13, 13);
+        /* box-shadow = border 처럼 박스에 그림자를 줌. */
+        padding: 10px;
+        transform: scale(0.8);
+        /* scale = 확대,축소  scale(1) = 1은 기본값  */
+        /* .card:hover에서 줬던 이벤트 효과를 다시 (1)기본값으로 돌아와라 */
+        transition: 0.2s;
+        /* 확대,축소 되는 시간 0.2초 */
+        opacity: 0.5;
+      }
+      .card:hover {
+        /*card CSS에 사용자의 커서(마우스의 포인터)가 요소에 올라가 있을 때 적용된다. */
+        /* html에서 요소에 마우스를 올렸을 때 반응하게 하는 css요소이다.
+        /* CSS에서 이벤트 효과를 줄 때 :hover 을 사용 */
+        cursor: pointer;
+        /* 마우스를 가져다 대면 point로 보여줌. */
+        transform: scale(1);
+        /* transform = 변형해라  scale(0.5) = 기본값(1)에서 (0.5)까지 축소 */
+        background-color: rgb(69, 238, 238);
+        opacity: 1;
+      }
+      .card img {
+        width: 240px;
+        height: 240px;
+      }
+      .text-wrap {
+        padding: 15px;
+        text-align: left;
+      }
+      .text-wrap h1 {
+        font-size: 30px;
+        font-weight: 900;
+        /* font 굵기 */
+      }
+      .text-wrap p {
+        line-height: 2;
+        font-size: 15px;
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <!-- card관련 객체만 와야한다. -->
+        <img src="파이리.gif" alt="" />
+        <div class="text-wrap">
+          <!-- text관련 객체만 와야한다. -->
+          <h1>파이리</h1>
+          <p>도룡뇽 포켓몬. 타입은 불꽃이다.</p>
+        </div>
+      </div>
+      <div class="card">
+        <!-- card관련 객체만 와야한다. -->
+        <img src="이상해씨.jpg" alt="" />
+        <div class="text-wrap">
+          <!-- text관련 객체만 와야한다. -->
+          <h1>이상해씨</h1>
+          <p>이상한 놈이다.</p>
+        </div>
+      </div>
+      <div class="card">
+        <!-- card관련 객체만 와야한다. -->
+        <img src="꼬북이.jpg" alt="" />
+        <div class="text-wrap">
+          <!-- text관련 객체만 와야한다. -->
+          <h1>꼬북이</h1>
+          <p>물고기다.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

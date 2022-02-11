@@ -1,0 +1,68 @@
+<!-- 검색 엔진 최적화(SEO) 
+검색을 조금 효율적으로 만들어 줌.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        background-color: bisque;
+        padding: 50px 30px;
+        align-items: center;
+      }
+      .logo p {
+        font-size: 24px;
+        color: rgb(64, 13, 245);
+      }
+      a {
+        text-decoration: none;
+        /* a태그 밑줄 없어짐 */
+      }
+      .menu {
+        display: flex;
+        list-style: none;
+      }
+      .menu li {
+        padding: 0 15px;
+        color: black;
+      }
+      .menu li :hover {
+        cursor: pointer;
+        background-color: aquamarine;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <p>선화동 맛집사이트</p>
+        </div>
+        <ul class="menu">
+          <!-- (li>a)*5 -->
+          <li><a href="">국밥 맛집</a></li>
+          <li><a href="">커피 맛집</a></li>
+          <li><a href="">칼국수 맛집</a></li>
+          <li><a href="">중국집 맛집</a></li>
+          <li><a href="">고기 맛집</a></li>
+        </ul>
+        <div class="icon">
+          <p>icon 영역</p>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
