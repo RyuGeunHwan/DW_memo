@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .card-container {
+        display: flex;
+        width: 1000px;
+        height: 400px;
+        margin: 200px auto;
+        flex-wrap: wrap;
+      }
+      .item{
+        flex: 1;
+        /* item에다가 flex: 1;을 하면 아이템들이 동일한 크기를 가지게 됨. */
+        height: 100%;
+        padding: 25px;
+        color: aliceblue;
+        /* item 태그 하위 글자는 모두 white로 변경 됨 */
+        position: relative;
+        transition: 0.5s;
+      }
+      .item:hover{
+        /* item의 이벤트역할(hover) */
+        flex-grow: 2.2;
+        transition: 0.4s;
+      }
+      .item:hover .caption{
+        /* item이 hover되면 caption을 대입 */
+        display: block;
+        /* none의 반대는 block */
+      }
+      .item:nth-child(1){
+        background-color: rgb(66, 157, 241);
+      }
+      .item:nth-child(2){
+        background-color: coral;
+      }
+      .item:nth-child(3){
+        background-color: darkkhaki;
+      }
+      .item h2{
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        /* 글자 가운데 정렬(text-align=글자 정렬) */
+      }
+      .caption{
+        display: none;
+        /* none의 반대는 block */
+        font-size: 12px;
+        margin: 28px 0;
+        max-width: 230px;
+      }
+      .caption button{
+        border:  1px solid white;
+        border-radius: 8px;
+        background: transparent;
+        padding: 8px 15px;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      .item img{
+        width: 200px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+
+    </style>
+  </head>
+
+  
+  <body>
+    <div class="container">
+      <div class="card-container">
+        <div class="item">
+          <h2>크로스 핏</h2>
+          <div class="caption">
+            <p>크로스핏 훈련 내용 작성...</p>
+            <a href="https://namu.wiki/w/%ED%81%AC%EB%A1%9C%EC%8A%A4%ED%95%8F"><button>예약</button></a>
+          </div>
+          <img src="img1.png" alt="">
+        </div>
+         <div class="item item1">
+          <h2>웨이트</h2>
+          <div class="caption">
+            <p>웨이트 훈련 내용 작성...</p>
+            <a href="https://ko.wikipedia.org/wiki/%EC%9B%A8%EC%9D%B4%ED%8A%B8_%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%8B%9D"><button>예약</button></a>
+          </div>
+          <img src="img2.png" alt="">
+          </div>
+           <div class="item">
+          <h2>요가</h2>
+          <div class="caption">
+            <p>요가 훈련 내용 작성...</p>
+            <a href="https://namu.wiki/w/%EC%9A%94%EA%B0%80"><button>예약</button></a>
+          </div>
+          <img src="img3.png" alt="">
+      </div>
+    </div>
+  </body>
+</html>
