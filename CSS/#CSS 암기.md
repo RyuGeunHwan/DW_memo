@@ -26,7 +26,9 @@
 
 - div.container = body태그라고 생각하면 된다. <-> flex의 container와 다른 개념
 
-- div.hello.hello${$}\*3
-  => <div class="hello hello1">1</div>
-  <div class="hello hello2">2</div>
-  <div class="hello hello3">3</div>
+```html
+- div.hello.hello${$}*3 =>
+<div class="hello hello1">1</div>
+<div class="hello hello2">2</div>
+<div class="hello hello3">3</div>
+```
