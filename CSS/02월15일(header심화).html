@@ -1,0 +1,158 @@
+<!--
+ header : 메뉴(navigation)도 오고 머리글, 사이트 로고 등이 올 수 있다.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="02월15일(header심화).css" />
+     <title>Document</title>
+   </head>
+   <body>
+     <div class="container">
+       <header>
+         <div class="nav">
+           <!-- nav = logo와 menu 관련 태그 -->
+           <div class="img"><img src="동물로고.jpeg" alt="" /></div>
+           <!-- img에는 logo이미지 -->
+           <div class="nav-links">
+             <!-- 앱에서의 X버튼 태그자리 -->
+             <ul>
+               <!-- ul>li*5 (ul자식태그에 li를 5개 만들어줘) -->
+               <li>
+                 <a
+                   href="https://www.google.com/search?q=%EA%B0%95%ED%98%95%EC%9A%B1+%ED%9B%88%EB%A0%A8%EC%82%AC&oq=&aqs=chrome.5.69i59i450l8.310809676j0j15&sourceid=chrome&ie=UTF-8"
+                   >강현욱</a
+                 >
+               </li>
+               <li>
+                 <a
+                   href="https://www.instagram.com/accounts/login/?next=/rousey_gangho/"
+                   >로우지</a
+                 >
+               </li>
+               <li>
+                 <a
+                   href="https://www.google.com/search?q=%ED%97%88%EC%8A%A4%ED%82%A4&ei=5DgLYqeQLpXDmAXAvpgQ&ved=0ahUKEwinkoLn-4D2AhWVIaYKHUAfBgIQ4dUDCA4&uact=5&oq=%ED%97%88%EC%8A%A4%ED%82%A4&gs_lcp=Cgdnd3Mtd2l6EAMyCAguEIAEELEDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgsILhCABBCxAxCDAToLCAAQgAQQsQMQgwE6CAguEIAEENQCOgQIABADOggIABCABBCxAzoOCAAQgAQQsQMQgwEQiwM6CwguEIAEELEDEIsDOgcIABADEIsDOggIABCABBCLAzoOCC4QgAQQsQMQgwEQ1AI6DgguEIAEEMcBENEDENQCSgQIQRgASgQIRhgAUABYkwNggQRoAXABeAGAAW-IAeAEkgEDNi4xmAEAoAEBuAECwAEB&sclient=gws-wiz"
+                   >허스키</a
+                 >
+               </li>
+               <li>
+                 <a
+                   href="https://www.google.com/search?q=%EA%B3%A8%EB%93%A0%EB%A6%AC%ED%8A%B8%EB%A6%AC%EB%B2%84&ei=7zgLYqKKDYmRr7wPm4yP8As&gs_ssp=eJzj4tTP1TcwLDEwNjJg9BJ6tXnF68kLXi9b87ZrB5B8vakFAMk7EAM&oq=%EA%B3%A8%EB%93%9C%EB%A6%AC&gs_lcp=Cgdnd3Mtd2l6EAMYADIKCC4QsQMQgwEQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjILCC4QgAQQxwEQrwEyBQgAEIAEOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQowI6CAgAEIAEEIsDOhQILhCABBCxAxCDARDHARCjAhCLAzoOCC4QgAQQsQMQgwEQ1AI6EQguEIAEELEDEMcBEKMCEIsDOg4IABCABBCxAxCDARCLAzoFCC4QgAQ6CwguEIAEELEDENQCOgsILhCABBDUAhCLAzoOCC4QgAQQsQMQgwEQiwM6CwguEIAEELEDEIsDOhoILhCABBCxAxCDARDHARCjAhCLAxCoAxCnAzoLCC4QgAQQsQMQgwE6CAguEIAEENQCOggIABCABBCxA0oECEEYAEoECEYYAFAAWO0EYMMQaAFwAXgBgAF-iAHaBZIBAzMuNJgBAKABAbgBAsABAQ&sclient=gws-wiz"
+                   >골든리트리버</a
+                 >
+               </li>
+             </ul>
+           </div>
+         </div>
+         <div class="text-box">
+           <h1>반사모</h1>
+           <p>반려동물을 사랑하는 사람들의 모임</p>
+           <a href="#">
+             <!-- 링크태그<a>를 마치 버튼처럼 꾸밀 예정 -->
+             <!-- # : 이동할 사이트가 아직 없다는걸 의미 -->
+             사진 소개
+           </a>
+         </div>
+       </header>
+       <section class="table">
+         <!-- 시간표 -->
+         <h1>웨이트 시간표</h1>
+         <table>
+           <caption>
+             류근환 헬스 시간표
+           </caption>
+           <thead>
+             <style>
+               th,
+               td,
+               table {
+                 border: 1px solid rgb(248, 244, 244);
+               }
+             </style>
+             <tr>
+               <th></th>
+               <th>시간</th>
+               <th>월</th>
+               <th>화</th>
+               <th>수</th>
+               <th>목</th>
+               <th>금</th>
+               <th>토</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td>첫째주</td>
+               <td>18:00~19:30</td>
+               <td>가슴,삼두</td>
+               <td>등,이두</td>
+               <td>어깨전면,측면</td>
+               <td>어깨후면,복근</td>
+               <td>하체대퇴이두,삼두,직근,장요근</td>
+               <td>휴식</td>
+             </tr>
+             <tr>
+               <td>둘째주</td>
+               <td>18:00~20:00</td>
+               <td
+                 id="style"
+                 style="background-color: rgb(140, 205, 231)"
+                 colspan="5"
+               >
+                 서킷트레이닝
+               </td>
+               <td id="style" style="background-color: red" rowspan="2">
+                 치팅오브치팅
+               </td>
+             </tr>
+             <tr>
+               <td>셋째주</td>
+               <td>19:30~21:00</td>
+               <td
+                 id="style"
+                 style="background-color: rgb(252, 213, 219)"
+                 rowspan="3"
+               >
+                 하체
+               </td>
+               <td>등,이두</td>
+               <td>어깨전면,측면</td>
+               <td>어깨후면,복근</td>
+               <td
+                 id="style"
+                 style="background-color: rgb(162, 243, 180)"
+                 rowspan="2"
+               >
+                 가슴,삼두,스트랭스
+               </td>
+             </tr>
+             <tr>
+               <td>넷째주</td>
+               <td>19:30~21:00</td>
+               <td>등,이두</td>
+               <td>어깨전면,측면</td>
+               <td>어깨후면,복근</td>
+               <td>유산소</td>
+             </tr>
+             <tr>
+               <td>다섯째주</td>
+               <td>18:30~21:00</td>
+               <td>18:30~19:30등,이두/19:30~21:00유산소</td>
+               <td>18:30~19:30어깨후면/19:30~21:00유산소</td>
+               <td>18:30~19:30어깨전면,측면/19:30~21:00유산소</td>
+               <td>대회</td>
+               <td>대회끝 막장</td>
+             </tr>
+           </tbody>
+         </table>
+       </section>
+       <div class="rainbow"></div>
+     </div>
+   </body>
+ </html>
+ 
