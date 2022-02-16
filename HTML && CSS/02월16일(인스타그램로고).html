@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(
+          circle at 33% 100%,
+          #fed373 4%,
+          #f15245 30%,
+          #d92e7f 62%,
+          #9b36b7 85%,
+          #515ecf
+        );
+        margin: 200px auto;
+        align-items: center;
+        justify-content: center;
+        border-radius: 54px;
+      }
+      .class {
+        display: flex;
+        width: 200px;
+        height: 200px;
+        border: 20px solid white;
+        align-items: center;
+        justify-content: center;
+        border-radius: 54px;
+        position: relative;
+      }
+      .class2 {
+        width: 100px;
+        height: 100px;
+        border: 20px solid white;
+        border-radius: 50%;
+      }
+      .class::after {
+        /* ::after == */
+        top: 15px;
+        right: 15px;
+        content: '';
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="flex1" style="color: aliceblue">안녕하세요</div>
+    </div>
+    <div class="container">
+      <div class="class">
+        <div class="class2"></div>
+      </div>
+    </div>
+  </body>
+</html>

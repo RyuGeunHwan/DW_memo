@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+      }
+      .side-nav {
+        display: flex;
+        position: fixed;
+        /* 사이드내비게이션은 포지션이 fixed 공식! */
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(
+            rgba(4, 10, 20, 0.5),
+            rgba(4, 10, 20, 0.5)
+          ),
+          url(스타벅스메뉴.jpg);
+        background-size: contain;
+        background-position: center;
+        width: 100%;
+        height: 250px;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .logo img {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 20px 10px black;
+        flex: 1;
+      }
+      .logo img:hover {
+        flex-grow: 2.2;
+        transition: 1s;
+      }
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+      .nav-links li {
+        padding: 0 50px;
+      }
+      .nav-links li:hover {
+        background-color: black;
+        transition: 0.8s;
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 14px;
+      }
+      .nav-links li a i {
+        font-size: 22px;
+        padding: 0 10px;
+      }
+      /* .starbucks {
+        display: flex;
+        width: 500px;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+      }
+      .LOC {
+        display: flex;
+        position: absolute;
+        margin: 300px;
+      }
+      .LOC li {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px;
+        text-align: center;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .LOC a {
+        text-decoration: none;
+      } */
+    </style>
+    <script
+      src="https://kit.fontawesome.com/ec2e6610a2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="side-nav">
+          <div class="logo"><img src="빽다방로고.jpg" alt="" /></div>
+          <ul class="nav-links">
+            <!-- (li>a*3) -->
+            <li>
+              <a href=""><i class="fa-solid fa-house"></i>HOME</a>
+              <!-- 아이콘 = <i></i>태그  -->
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-comment-dots"></i>Message</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-gear"></i>Settings</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-bars"></i>menu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="starbucks">
+        <ul class="LOC">
+          <li><img src="스타벅스.jpg" alt="" /> <a href=""></a>관저점</li>
+          <li><img src="스타벅스.jpg" alt="" /><a href=""></a>가수원점</li>
+          <li><img src="스타벅스.jpg" alt="" /><a href=""></a>유천점</li>
+          <li><img src="스타벅스.jpg" alt="" /><a href=""></a>도안점</li>
+          <li><img src="스타벅스.jpg" alt="" /><a href=""></a>상대점</li>
+        </ul>
+      </div> -->
+    </div>
+  </body>
+</html>
