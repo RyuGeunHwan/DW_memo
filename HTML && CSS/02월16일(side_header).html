@@ -11,6 +11,9 @@
         padding: 0;
         box-sizing: border-box;
       }
+      body {
+        height: 1080px;
+      }
       .container {
         display: flex;
         /* justify-content: center;
@@ -20,8 +23,6 @@
         display: flex;
         position: fixed;
         /* 사이드내비게이션은 포지션이 fixed 공식! */
-        top: 0;
-        left: 0;
         background-image: linear-gradient(
             rgba(4, 10, 20, 0.5),
             rgba(4, 10, 20, 0.5)
@@ -29,15 +30,15 @@
           url(스타벅스메뉴.jpg);
         background-size: contain;
         background-position: center;
-        width: 100%;
-        height: 250px;
+        width: 250px;
+        height: 100%;
         justify-content: space-around;
         align-items: center;
+        flex-direction: column;
       }
       .logo img {
         display: flex;
         align-items: center;
-        margin-left: 50px;
         width: 80px;
         height: 80px;
         border-radius: 20px;
@@ -50,14 +51,19 @@
       }
       .nav-links {
         display: flex;
+        flex-direction: column;
         list-style: none;
       }
       .nav-links li {
-        padding: 0 50px;
+        margin-top: 20px;
       }
       .nav-links li:hover {
         background-color: black;
         transition: 0.8s;
+        background: linear-gradient(
+          rgb(240, 240, 161, 0.1),
+          rgb(121, 228, 121, 0.5)
+        );
       }
       .nav-links a {
         text-decoration: none;
