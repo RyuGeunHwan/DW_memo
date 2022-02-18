@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3%;
+      }
+      .gallery {
+        width: 80%;
+        margin: auto;
+      }
+      .gallery-title {
+        text-align: center;
+      }
+      .gallery-col {
+        flex-basis: 22%;
+        /* flex-basis : flex아이템의 초기 크기를 지정 */
+        position: relative;
+      }
+      .layer {
+        width: 100%;
+        height: 90%;
+        border-radius: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .layer h3 {
+        position: absolute;
+        /* position이 relative인 gallery-col은 태그안에 있는 position: absolute의 부모가 된다.*/
+        bottom: 0;
+        left: 35%;
+        font-size: 20px;
+        color: rgb(102, 11, 248);
+        opacity: 0;
+        /* opacity투명도 0~1까지 입력 */
+        transform: translateX(-50%);
+        transition: 0.5s;
+      }
+      .layer:hover {
+        background-color: rgba(232, 232, 232, 0.6);
+      }
+      .layer:hover h3 {
+        opacity: 1;
+        bottom: 48%;
+      }
+      .gallery-title h1 {
+        font-size: 36px;
+        font-weight: 700;
+      }
+      .gallery-title p {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 30px;
+        /* 문단과 문단사이를 띄어줌 */
+        color: #777;
+      }
+      .gallery-col img {
+        width: 100%;
+        height: 90%;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <section class="gallery"></section> -->
+      <!-- semantic tag -->
+      <div class="section gallery">
+        <!-- 네이버 방법 -->
+        <!-- 클래스 이름을 줄 때는 "공간+공간에 대한 주제" -->
+        <!-- 백엔드에서 class name지을때는 카멜 표기법 -->
+        <!-- 프론트엔드에서 class name 지을때는 user-name '바'로 나눠서 표기 -->
+        <div class="gallery-title">
+          <!-- gallery-title로 묶으면 gallery-title태그 안에있는 모든 요소 한번에 바꿀 수 있다. -->
+          <h1>인테리어</h1>
+          <p>시대에 맞는 인테리어를 이용하여 자신만의 공간을 꾸며보세요.</p>
+        </div>
+        <div class="row">
+          <!-- flex로 사용하는 태그는 class이름을 row라고 하면 편함 -->
+          <div class="gallery-col">
+            <img src="img/인테리어1.jpeg" alt="" />
+            <!-- img폴더가 같은 폴더경로에 있다면 sorce에 img/'사진이름'으로 가져오면 됨. -->
+            <!-- img폴더가 현재 폴더보다 뒤에있는 폴더의경로에 있다면 ../img/'사진이름'이 오면 됨. "../"이 뒤로간다는 의미 -->
+            <!-- 
+              -html 경로
+            html/workspace/(day01/index.html) 을 가져오려면 뒤로 몇번 가야되나?
+          => ../../img/증명사진.png(뒤로 두번 가기)
+              -사진경로 
+            html/img/증명사진.png
+          -->
+            <div class="layer"><h3>벽걸이</h3></div>
+          </div>
+          <div class="gallery-col">
+            <img src="img/인테리어2.jpeg" alt="" />
+            <div class="layer"><h3>쇼파</h3></div>
+          </div>
+          <div class="gallery-col">
+            <img src="img/인테리어3.jpeg" alt="" />
+            <div class="layer"><h3>샹들리에</h3></div>
+          </div>
+          <div class="gallery-col">
+            <img src="img/인테리어4.jpeg" alt="" />
+            <div class="layer"><h3>풍수지리</h3></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
