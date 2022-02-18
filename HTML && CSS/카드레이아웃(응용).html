@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url(https://c.wallhere.com/photos/ce/0c/yugioh_black-2481.jpg!d);
+        background-position: center;
+        background-size: cover;
+      }
+      .title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        line-height: 40px;
+        color: white;
+      }
+      .title p {
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .gallery {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .gallery-img {
+        position: relative;
+      }
+      .gallery-img img {
+        width: 100%;
+        height: 100%;
+      }
+      .gallery-img:hover img{
+          opacity: 0;
+          transition: 0.8s;
+      }
+      .layer1 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .layer1:hover {
+        background: url(유희왕카드img/데스\ 트로이\ 피닉스\ 가이.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: scale(1.2);
+        transition: 1s;
+      }
+      .layer2 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+      }
+      .layer2:hover {
+        background: url(유희왕카드img/봉인된\ 엑조디아.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: scale(1.2);
+        transition: 1s;
+        transform: rotateY(1440deg);
+        transition: 3s;
+        opacity: 1;
+      }
+      .layer3 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .layer3:hover {
+        background: url(유희왕카드img/오벨리스크의\ 거신병.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: rotateX(1440deg);
+        transition: 2s;
+      }
+      .layer4 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .layer4:hover {
+        background: url(유희왕카드img/진홍안의\ 흑룡.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: rotateZ(1440deg);
+        transition: 2s;
+      }
+      .gallery-img p {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <header></header>
+      <div class="section">
+        <div class="title">
+          <h1>★추억의 유희왕카드★</h1>
+          <p>
+            수천년 지나 마침내 선택받은 빛과 어둠의 영혼을 가진 바로 그
+            소년(유희왕) 게임은 이제 시작되고 깨어나는 두번째 영혼의 지배 카드를
+            내미는 순간 모든 게 변해 바쁘게 움직이던 세상도 정지돼 승자가 누가
+            될지 아무도 장담 못해! <br />
+            -최선을 다하길 바래! <br />
+            승자가 되길 바래! 어디 <br />
+            한번해봐! 그래 한번 해봐! -그게 네 전부라면 이번에는 내 차례! <br />
+            숨막힐 듯 조여 오는 필드의 압박 오직 내가 믿는 건 내 자신과 이순간의
+            운명 Never Lose! Without Fail! 내 미래와 용기를 걸고서 나는 절대
+            지지 않아! 자, 가자! <br />
+            승리의 세계로 너와 나의 마음이 어둠을 불러와 마지막 비장의 카드!
+            결국엔 웃는 나! <br />
+            (유희왕) 카드의 신화! 힘을 지배하고 세상을 지배해 나는 절대,
+            지지않아! <br />
+            자, 가자! <br />
+            승리의 세계로 <br />
+          </p>
+        </div>
+        <div class="row">
+          <div class="section gallery">
+            <div class="gallery-img">
+              <img src="유희왕카드img/유희왕카드 뒷면.jpg" alt="" />
+              <div class="layer1">
+                <p>데스 트로이 피닉스 가이</p>
+              </div>
+            </div>
+            <div class="gallery-img">
+              <img src="유희왕카드img/유희왕카드 뒷면.jpg" alt="" />
+              <div class="layer2">
+                <p>봉인된 엑조디아</p>
+              </div>
+            </div>
+            <div class="gallery-img">
+              <img src="유희왕카드img/유희왕카드 뒷면.jpg" alt="" />
+              <div class="layer3">
+                <p>오벨리스크의 거신병</p>
+              </div>
+            </div>
+            <div class="gallery-img">
+              <img src="유희왕카드img/유희왕카드 뒷면.jpg" alt="" />
+              <div class="layer4">
+                <p>진홍안의 흑룡</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
