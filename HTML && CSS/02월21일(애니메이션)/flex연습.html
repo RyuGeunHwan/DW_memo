@@ -1,0 +1,117 @@
+<!-- 
+    flex는 컨테이너와 아이템으로 구성
+
+
+    컨테이너 CSS
+    - display: flex;
+    - align-items: center;
+    - justify-content : space-between
+
+
+    아이템 CSS
+    - flex-basis
+    - flex-gorw
+    - flex
+
+    flex는 컨테이너와 아이템으로 구성
+    컨테이너 기능과 아이템 기능으로 나뉨
+
+    컨테이너는 아이템 배치 설정
+    아이템은 각각아이템 크기, 넓이 설정
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .flex {
+        display: flex;
+        margin-bottom: 30px;
+        width: 80%;
+        height: 200px;
+        background-color: black;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+      }
+      /* section1클래스 안에 flex클래스 안에 item클래스의 첫번째 자식 */
+      .section1 .flex .item:nth-child(1) {
+        background-color: red;
+        flex-grow: 1;
+        /* flex-grow : 아이템 성장 */
+      }
+      .item {
+        height: 80%;
+        background-color: aqua;
+        flex-basis: 10%;
+        /* flex-basis : 아이템 초기 크기 설정 */
+        /* flex : 1을 하게되면 모든 아이템의 크기가
+         flex-basis: 100% ; 한것 처럼 됨*/
+        border: solid;
+        padding: 10px;
+      }
+      .lastbox {
+        margin-top: 10px;
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        animation: move 1s linear 3;
+      }
+      @keyframes move {
+        0% {
+          width: 0;
+          background-color: aliceblue;
+        }
+        50% {
+          background-color: red;
+        }
+        100% {
+          width: 1;
+          background-color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section">
+        <div class="flex">
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+      </div>
+      <div class="section1">
+        <!-- <div class="section1"></div> section1로 나누어 준다. -->
+        <div class="flex">
+          <div class="item">
+            <!-- 방법1. <div class="item" style="background-color: red";></div> -->
+            <div class="lastbox"></div>
+            <div class="lastbox"></div>
+          </div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

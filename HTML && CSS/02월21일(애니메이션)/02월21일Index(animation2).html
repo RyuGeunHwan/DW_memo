@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        margin-top: 100px;
+      }
+      .car {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        flex-direction: column;
+      }
+      .intro {
+        text-align: center;
+      }
+      .intro h1 {
+        font-size: 36px;
+        font-weight: 700;
+      }
+      .intro p {
+        color: #777;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 10px;
+      }
+      .img {
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2%;
+      }
+      .car-col {
+        /* flex-basis 아이템에 크기 지정 */
+        flex-basis: 30%;
+        border-radius: 10px;
+        text-align: left;
+        margin-bottom: 5%;
+      }
+      .car-col img {
+        width: 100%;
+        height: 70%;
+        border-radius: 15px;
+        box-shadow: 10px 10px 30px 10px;
+        animation: car 0.3s linear 3;
+      }
+      @keyframes car {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.3;
+          transform: scale(0.3);
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      .car-col h3 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="car">
+        <!-- intro 소개글이 있는 박스 -->
+        <div class="intro">
+          <h1>자동차 컬렉션</h1>
+          <p>자동차를 소개합니다.</p>
+        </div>
+        <!-- img 소개할 사진을 담을 박스 -->
+        <div class="img">
+          <!-- car-col: flex box item -->
+          <div class="car-col">
+            <img src="자동차img/람보르기니.jpeg" alt="" />
+            <h3>람보르기니</h3>
+            <p>슈퍼카...</p>
+          </div>
+          <div class="car-col">
+            <img src="자동차img/롤스로이스.jpeg" alt="" />
+            <h3>롤스로이스</h3>
+            <p>럭셔리카...</p>
+          </div>
+          <div class="car-col">
+            <img src="자동차img/벤틀리.jpg" alt="" />
+            <h3>벤틀리</h3>
+            <p>드림카...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
