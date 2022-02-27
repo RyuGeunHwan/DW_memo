@@ -1,9 +1,10 @@
-- ## DCL
+- ## DCL(Data Control Language)
 
-1. GRANT(권한부여)
-2. REVOKE(권한회수)
+1. GRANT(권한*부여*)
+2. REVOKE(권한*회수*)
+3. ROLE(다양한 권한과 사용자 사이에서 중개역할)
 
-- # TCL
+- # TCL(Transaction Control Language)
 
 1. COMMIT
    (DML은 커밋 미포함, DDL은 커밋 포함)
