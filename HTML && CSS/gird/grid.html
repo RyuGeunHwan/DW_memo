@@ -1,0 +1,168 @@
+<!-- 
+flex는 1차원적인 UI(한 방향 레이아웃)
+
+grid는 2차원적인 UI(두 방향 레이아웃) 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+        border: solid;
+      }
+      header .nav {
+        display: flex;
+        justify-content: space-around;
+      }
+      .logo-img img {
+        width: 200px;
+        height: 70%;
+        margin-top: 25px;
+        border-radius: 15px;
+      }
+
+      .list ul {
+        width: auto;
+        height: auto;
+        border: solid;
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 0;
+      }
+      .list ul li {
+        margin: 20px 50px;
+        /* margin-top: 50%; */
+        /* margin-left: 30px; */
+      }
+      .section {
+        /* grid 2차원 UI <-> flex 1차원 UI */
+        display: grid;
+        /*
+        1. repeat() : grid 안에 있는 아이템들 모두 크기 조절
+        repeat(x , y) :
+            x : 반복 횟수
+            y : 값(크기에 대한)
+        2. minmax() : 최소크기와 최대크기 조절
+        3. fr(fraction) : 1fr = flex : 1 과 동일
+        4. grid-gap : item간의 간격조절
+        */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 3%;
+        width: 80%;
+        height: auto;
+        margin: 30px auto 0;
+        /* border: solid; */
+      }
+      .item {
+        width: 100%;
+        height: auto;
+        /* border: solid; */
+        /* border: 2px solid black; */
+        box-shadow: 10px 5px 20px 5px;
+        border-radius: 15px;
+        transition: 0.8s;
+        cursor: pointer;
+        /* padding: 30px; */
+      }
+      .item:hover {
+        transform: scale(0.7);
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+      }
+      .item img {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 80%;
+        height: 50%;
+        border-radius: 10px;
+        /* border: solid; */
+      }
+      .item .card h2 {
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div class="container">
+        <header>
+          <div class="nav">
+            <div class="logo-img">
+              <img src="../day_05/크리스범스테드1.jpg" alt="" />
+            </div>
+            <div class="list">
+              <ul>
+                <li>HOME</li>
+                <li>MENU</li>
+                <li>QNA</li>
+                <li>SET</li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <div class="section">
+          <div class="item">
+            <div class="card">
+              <img src="../동물로고.jpeg" alt="" />
+              <h2>시바견</h2>
+              <p>시바견은 귀여워</p>
+              <a href="./서브페이지/Index(서브페이지).html">상세보기</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img src="../day_06/꼬북이.jpg" alt="" />
+              <h2>꼬북이</h2>
+              <p>꼬북이는 귀여워</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img src="../day_06/이상해씨.jpg" alt="" />
+              <h2>이상해씨</h2>
+              <p>이상해씨는 귀여워</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img src="../day_06/파이리.gif" alt="" />
+              <h2>파이리</h2>
+              <p>파이리는 귀여워</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img src="../day_08/크리스범스테드.jpg" alt="" />
+              <h2>크리스</h2>
+              <p>크리스는 귀여워</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img src="../day_06/헬스장 빌런.gif" alt="" />
+              <h2>빌런</h2>
+              <p>빌런은 귀여워</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
