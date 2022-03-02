@@ -19,7 +19,7 @@ var information = {
 // 1. key는 중복 불가능! / value는 중복 가능!
 // 2. value에 숫자형(int, double), 문자형(string),
 //    boolean형, 배열형(array), null 데이터 올 수 있음.
-// 3. 중괄호로 감싼다.{}
+// 3. JSON은 중괄호로 감싼다.{}
 var age = information.age;
 
     if(age>= 28) {
