@@ -1,3 +1,19 @@
+## grid
+
+```
+(차이점)
+1. flex : 1차원 방향
+2. grid : 2차원 방향
+
+(공통점)
+1. 둘다 container안에 item이 있는 구조
+2. display : flex or grid
+ex) 인스타그램 사진 피드 grid로 구현
+ex) 유튜브는 flex로 구현
+
+grid-gap을 이용해서 item과 item서아 간격을 조절함.
+```
+
 ### grid 문법)
 
 ```
