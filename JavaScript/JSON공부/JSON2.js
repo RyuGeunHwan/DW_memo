@@ -38,7 +38,7 @@ var count = 0;
 var searchWorld = '이';
 var firstName = '';
 for (var i = 0; i < len; i++){
- firstName = array[i].substring(1, 3);
+ firstName = array[i].substring(2, 3);
  if (firstName == searchWorld) {
      count++;
  }
