@@ -39,15 +39,33 @@
    ( 하위버전을 사용하면 상위버전을 사용하지 못하지만 상위버전 사용시 하위버전 사용 가능)
 ```
 
-## 생성자와 함수의 차이
+## 생성자와 함수(메소드)의 차이
 
 ```
-1. 생성자는 return값이 없음
+1. ***생성자는 return값이 없음(생성자는 매개 변수는 존재할 수 있지만 반환 값은 존재하지 않는다.)
 2. 함수는 return 값이 있어야 사용 가능.
 3. 사용 목적
     3-1) 생성자 : 생성자는 값을 초기화하는게 목적
     3-2) 함수 : 함수는 파라미터에 값을 받아서 결과를 처리하는게 목적
+4. ***class파일에 생성자를 생성하지 않더라도 class를 main메소드에서 new로 호출할 수 있다.
+    4-1) why? 별도의 생성자를 만들지 않았을 때 컴파일러에 의해 컴파일 타임에 
+              자동(default)으로 생성자가 만들어지기 때문이다. 이를 기본생성자라고 한다.
 ```
+```java
+        4-1 ex) 
+        public class DwAcademy{ // 클래스파일
+        // public DwAcademy(){ } 기본생성자가 생략되어 있는것.
+            int x;
+            String y;
+
+            public static void main(String[] args){
+                DwAcademy academy = new DwAcademy()
+                academy.x = 0;
+                academy.y = "홍길동";
+            }
+        }
+```
+
 
 ## new 호출
 
