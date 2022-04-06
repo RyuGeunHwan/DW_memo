@@ -1,13 +1,4 @@
-// 알로하녹 카페는 회원제로 운영한다.
-
-// 커피 10잔을 마시면 브론즈 회원
-// 커피 20잔을 마시면 실버 회원
-// 커피 30잔을 마시면 골드 회원
-
-// 심화 과정 : 회원 이름이 류근환이면 함수 A를 가져와서 point 적립.
-
-package 상속;
-
+package java;
 class Point{
 	int point;
 	int coffeeCount;
@@ -15,6 +6,10 @@ class Point{
 	int totalPoint;
 	
 	public void useCoffeePoint(int coffeeCount){
+		if(this.point>=10) {
+			this.totalPoint = this.totalPoint-10*coffeeCount;
+			System.out.println("포인트 사용 후 남은 포인트 "+this.totalPoint+"포인트 입니다.");
+		}
 	this.point =10;
 	this.coffeeCount = coffeeCount;
 	//커피 1잔당 포인트 10점
@@ -39,37 +34,49 @@ class Point{
 		this.type = type;
 	}
 }
-public class 알로하녹 {
+public class 카페포인트 {
+	// 알로하녹 카페는 회원제로 운영한다.
+
+	// 커피 10잔을 마시면 브론즈 회원
+	// 커피 20잔을 마시면 실버 회원
+	// 커피 30잔을 마시면 골드 회원
+
+	// 심화 과정 : 회원 이름이 류근환이면 함수 A를 가져와서 point 적립.
+
 	
 
-	public static void main(String[] args) {
-		Point p = new Point();
-		p.setPoint(15);
-		if(p.getPoint()> 0 && p.getPoint()<10) {
-			p.setType("일반 회원");
-			System.out.println(p.type);
-		}
-		if(p.getPoint()>=10&& p.getPoint()<20) {
-			p.setType("브론즈 회원");
-			System.out.println(p.type);
-		}
-		if(p.getPoint()>=20&& p.getPoint()<30) {
-			p.setType("실버 회원");
-			System.out.println(p.type);
-		}
-		if(p.getPoint()>=30&& p.getPoint()<40) {
-			p.setType("골드 회원");
-			System.out.println(p.type);
-		}
-		if(p.getPoint()>=40) {
-			p.setType("왕");
-			System.out.println(p.type);
-		}
 		
-		
-		
+
+		public static void main(String[] args) {
+			Point p = new Point();
+			p.setPoint(15);
+			if(p.getPoint()> 0 && p.getPoint()<10) {
+				p.setType("일반 회원");
+				System.out.println(p.type);
+			}
+			if(p.getPoint()>=10&& p.getPoint()<20) {
+				p.setType("브론즈 회원");
+				System.out.println(p.type);
+			}
+			if(p.getPoint()>=20&& p.getPoint()<30) {
+				p.setType("실버 회원");
+				System.out.println(p.type);
+			}
+			if(p.getPoint()>=30&& p.getPoint()<40) {
+				p.setType("골드 회원");
+				System.out.println(p.type);
+			}
+			if(p.getPoint()>=40) {
+				p.setType("왕");
+				System.out.println(p.type);
+			}
+			p.useCoffeePoint(1);
+			
+			
+		}
+
 	}
 
-}
+
 
 
