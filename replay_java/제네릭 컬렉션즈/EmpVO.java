@@ -1,5 +1,3 @@
-package 컬렉션즈;
-
 public class EmpVO {
 	int empno;//사원번호
 	String ename;//사원이름

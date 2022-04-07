@@ -1,9 +1,6 @@
-package 컬렉션즈;
-
 import java.util.ArrayList;
 
-public class EmpMain {
-	public static ArrayList<EmpVO> getEmpList(ArrayList<EmpVO> list){//EmpVO를 담고있는 ArrayList를 파라미터로 담고있다.
+	public static ArrayList<EmpVO> getEmpList(ArrayList<EmpVO> list){//<EmpVO>클래스를 담고있는 ArrayList를 파라미터에 담고있다.
 		for(int i=0; i<list.size(); i++) {
 			System.out.println(list.get(i).ename);
 			System.out.println(list.get(i).empno);
@@ -106,13 +103,6 @@ public class EmpMain {
 		System.out.println("");
 		System.out.println("-----------------------------------오전 문제 시작--------------------------------------");
 		
-		
-		
-		
-		
-		
-		
-		
 		//오전 문제8개
 		ArrayList<EmpVO> list1 = new ArrayList<EmpVO>();
 //		EmpVO e = new EmpVO(7369,"SMITH","CLERK","1980-12-17",800,20);
@@ -201,4 +191,4 @@ public class EmpMain {
 	
 	}
 
-}
+
