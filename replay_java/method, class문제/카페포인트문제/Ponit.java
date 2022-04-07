@@ -1,4 +1,4 @@
-package java;
+package 상속;
 class Point{
 	int point;
 	int coffeeCount;
@@ -6,12 +6,13 @@ class Point{
 	int totalPoint;
 	
 	public void useCoffeePoint(int coffeeCount){
-		if(this.point>=10) {
+		if(this.totalPoint>=10) {
 			this.totalPoint = this.totalPoint-10*coffeeCount;
-			System.out.println("포인트 사용 후 남은 포인트 "+this.totalPoint+"포인트 입니다.");
+			System.out.println("point잔액은 "+this.totalPoint+"점 입니다.");
 		}
-	this.point =10;
-	this.coffeeCount = coffeeCount;
+		if(this.totalPoint<10){
+			System.out.println("포인트를 사용할 수 없습니다.");
+		}
 	//커피 1잔당 포인트 10점
 	// 커피 한잔을 포인트로 사용 하면 totalPoint에서 -10을 해야한다.
 }
@@ -34,7 +35,7 @@ class Point{
 		this.type = type;
 	}
 }
-public class 카페포인트 {
+public class 알로하녹 {
 	// 알로하녹 카페는 회원제로 운영한다.
 
 	// 커피 10잔을 마시면 브론즈 회원
@@ -50,6 +51,9 @@ public class 카페포인트 {
 		public static void main(String[] args) {
 			Point p = new Point();
 			p.setPoint(15);
+			p.setPoint(5);
+			p.setPoint(12);
+
 			if(p.getPoint()> 0 && p.getPoint()<10) {
 				p.setType("일반 회원");
 				System.out.println(p.type);
@@ -70,8 +74,8 @@ public class 카페포인트 {
 				p.setType("왕");
 				System.out.println(p.type);
 			}
-			p.useCoffeePoint(1);
-			
+			p.useCoffeePoint(2);
+			p.useCoffeePoint(1);			
 			
 		}
 
