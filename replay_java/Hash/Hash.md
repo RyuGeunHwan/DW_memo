@@ -1,6 +1,6 @@
 # Hash Map
 
-# Hash -> entry,set,get,values 구글링해보기!
+# Hash -> entry,set,get,values,iterator(순차검색) 구글링해보기!
 
 ```
 1. Hash란?
