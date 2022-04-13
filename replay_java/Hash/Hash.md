@@ -1,5 +1,7 @@
 # Hash Map
 
+## <a href ="https://velog.io/@gksmf6699/%EA%B8%B0%EC%B4%88JAVA-21%EA%B0%95-%EA%B2%8C%EC%8B%9C%ED%8C%90-%EB%A7%8C%EB%93%A4%EA%B8%B0">HashMap 기초</a>
+
 # Hash -> entry,set,get,values,iterator(순차검색) 구글링해보기!
 
 ```
