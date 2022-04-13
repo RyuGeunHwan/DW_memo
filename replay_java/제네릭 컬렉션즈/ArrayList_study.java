@@ -50,7 +50,7 @@ public class ArrayList_study {
 		// 문제1. list2에 추가된 총합 구하기(40제외)
 		int sum = 0;
 		for(int i=0; i<list2.size(); i++) {
-			int value = list2.get(i);
+			int value = list2.get(i); // 여기서 알 수 있는 것은 클래스 타입인(Integer)가 아닌 int형 변수에도 대입을 할 수 있다.
 			if(value != 40) {
 			sum += value;
 			}
