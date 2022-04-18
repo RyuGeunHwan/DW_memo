@@ -7,11 +7,9 @@ public class 숫자_문자열과_영단어 {
 	public static int solution(String s) {
 		int answer = 0;
 		String[] words = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
-		if(s.length()>=1 && s.length()<=50) {
 		for(int i=0; i<words.length; i++) {
 			s = s.replace(words[i], String.valueOf(i));
 			// int => String으로 변환 메소드 = String.valueOf(변환할 숫자) or Integer.toString(변환할 숫자)
-		}
 		}
 		answer = Integer.parseInt(s);
 		
