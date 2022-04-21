@@ -16,18 +16,23 @@ public class MainController{
         list.add(new UserVO("Hooker","MANAGER",1500));
         list.add(new UserVO("King","MASTER",0));
         
-        UserService us = new UserService();
+        UserServiceImple service = new UserService();
+        // 인터페이스는 인스턴스화 할 수 없지만 부모는 자식을 포함 할 수 있는 특징을 살려서
+        // UserServiceImple는 자식클래스(서브클래스)인 UserService를 포함시켜 인터페이스를 인스턴스화 할 수 있다!
+
+
+
         //여기서 문제 풀 것
         // 1. 부서이름이 DEVELOP인 사원 급여를 2배 인상하시오.
-        us.updateSal(list, "DEVELOP");
+        service.updateSal(list, "DEVELOP");
         
         // 2. 급여가 0 ~ 100 : 1 레벨, 101 ~ 1000 : 2 레벨, 1001 이상부터는 3 레벨로 수정하시오.
-        us.updateLv(list);
+        service.updateLv(list);
         
         // 3. 레벨 3이상 직원을 모두 해고하시오.
-        us.deleteUser(list, 3);
+        service.deleteUser(list, 3);
         
         // 4. 이름이 King인 직원의 모든 정보 조회.
-        us.selectUserByEname(list, "King");
+        service.selectUserByEname(list, "King");
     }
 }
