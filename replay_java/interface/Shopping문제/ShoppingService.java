@@ -46,6 +46,7 @@ public class ShoppingService implements ShoppingServiceImpl{
 		//선생님 풀이
 		Date d = new Date();
 		//1. 오늘날짜 구해야함.
+		// 자바에서는 날짜를 계산할 때에는 SimpleDateFormat을 사용!
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd", Locale.KOREA);
 		// 한국시간으로 가져와야 하는 것이 키포인트(Locale.KOREA)
 		String strToday = formatter.format(Calendar.getInstance().getTime()); //오늘날짜 리턴
@@ -103,14 +104,12 @@ public class ShoppingService implements ShoppingServiceImpl{
 
 	@Override
 	public List<UserVO> getPurchaseRankerUser(List<UserVO> list, ProductVO vo, int userNo) {
-		vo.setPrice(30000);
 		double db= 0.05;
-		vo.setProductName("자전거");
 		for(int i=0; i<list.size(); i++) {
 			if(list.get(i).getUserNo() == userNo) {
 				list.get(i).setPoint(list.get(i).getPoint()+(int)(vo.getPrice()*db));
 				int point = list.get(i).getPoint();
-				System.out.println("가격의 5% 인 " +(int)(vo.getPrice()*db)+"를 포인트로 적립");
+				System.out.println("가격의 5% 인 " +(int)(vo.getPrice()*db)+"를 포인트로 적립, 총 포인트 점수 = "+list.get(i).getPoint());
 			}
 		}
 		return null;
