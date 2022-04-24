@@ -105,11 +105,13 @@ public class ShoppingService implements ShoppingServiceImpl{
 	@Override
 	public List<UserVO> getPurchaseRankerUser(List<UserVO> list, ProductVO vo, int userNo) {
 		double db= 0.05;
-//		System.out.println(vo.getPrice());
-//		System.out.println(vo.getProductName());
 		List<ProductVO> pvoList = new ArrayList<ProductVO>();
-		for(int i=0;i<pvoList.size();i++) {
-			System.out.println("가격은? => "+pvoList.get(i).getPrice());
+			for(int i=0; i<list.size(); i++) {
+			if(list.get(i).getUserNo() == userNo) {
+				pvoList.add(vo); // if(조건문이 true일 때) 그에 해당하는 매개변수 vo를 pvoList에 대입 한 후
+				list.get(i).setList(pvoList);// userList인 list의 필드변수인 list에 setting!
+				// 한 후에 syso로 pvoList를 출력하면 이상한거 뜸....
+			}
 		}
 		for(int i=0; i<list.size(); i++) {
 			if(list.get(i).getUserNo() == userNo) {
