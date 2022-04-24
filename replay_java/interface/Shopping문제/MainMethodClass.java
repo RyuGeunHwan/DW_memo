@@ -42,10 +42,8 @@ public class MainMethodClass {
 		//8. 구매이력이 있는 회원만 조회.
 		// pvoList.add 에 추가할 정보 : 
 		// shopping.getPurchaseRankerUser(pvoList.get(i)해서 3가지를 한번에 파라미터로 받을 수 있는지 확인! 그러면 내일 다시 만나요!);
-		for(int i=0; i<userList.size(); i++) {
-			if(userList.get(i).getList() != null) {
-				System.out.println(userList.get(i).getUserName());
-			}
-		}
+		// ProductVO에 userNo이라는 필드변수 생성? getter,setter 이용해서 List 추가?
+		//  List<ProductVO> pvoList = new ArrayList<ProductVO>();
+		// pvoList(구매이력 리스트)에 new ProductVO("헤드셋", 1000)를 추가 한뒤에 헤드셋을 구매한 userNo이 150인 사람 조회
 	}
 }
