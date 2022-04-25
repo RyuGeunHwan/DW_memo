@@ -13,8 +13,11 @@ public class ShoppingService implements ShoppingServiceImpl{
 	
 	@Override
 	public List<UserVO> getUserList(List<UserVO> list) {
+		List<ProductVO> pvoList = new ArrayList<ProductVO>();
+		ProductVO pvo = new ProductVO("자전거",10000);
+		pvoList.add(pvo);
+		System.out.println(pvoList.get(0).getPrice());
 		for(int i=0; i<list.size(); i++) {
-			
 		}
 		return null;
 	}
@@ -111,7 +114,6 @@ public class ShoppingService implements ShoppingServiceImpl{
 				int point = list.get(i).getPoint();
 				System.out.println("가격의 5% 인 " +(int)(vo.getPrice()*db)+"를 포인트로 적립");
 				System.out.println("총포인트는? "+point);
-				
 			}
 		}
 		return list;
