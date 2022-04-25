@@ -105,21 +105,12 @@ public class ShoppingService implements ShoppingServiceImpl{
 	@Override
 	public List<UserVO> getPurchaseRankerUser(List<UserVO> list, ProductVO vo, int userNo) {
 		double db= 0.05;
-		List<ProductVO> pvoList = new ArrayList<ProductVO>();
-			for(int i=0; i<list.size(); i++) {
-			if(list.get(i).getUserNo() == userNo) {
-				pvoList.add(vo); // if(조건문이 true일 때) 그에 해당하는 매개변수 vo를 pvoList에 대입 한 후
-				list.get(i).setList(pvoList);// userList인 list의 필드변수인 list에 setting!
-				// 한 후에 syso로 pvoList를 출력하면 이상한거 뜸....
-			}
-		}
 		for(int i=0; i<list.size(); i++) {
 			if(list.get(i).getUserNo() == userNo) {
 				list.get(i).setPoint(list.get(i).getPoint()+(int)(vo.getPrice()*db));
 				int point = list.get(i).getPoint();
 				System.out.println("가격의 5% 인 " +(int)(vo.getPrice()*db)+"를 포인트로 적립");
 				System.out.println("총포인트는? "+point);
-				list.get(i).setList(pvoList);
 				
 			}
 		}
