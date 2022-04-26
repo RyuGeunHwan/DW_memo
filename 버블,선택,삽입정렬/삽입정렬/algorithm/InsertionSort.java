@@ -32,8 +32,10 @@ public class InsertionSort {
 		for(i=0; i<len; i++) {
 			System.out.println(array[i]);
 		}
-	// 이중for문 사용 i와 j를 비교하여 j가 작으면 j를 한칸 앞으로 i는 뒤로 한칸 미룬다.(j=i+1)
-	// 단, j는 감소하면서 앞에 인덱스가 작은 수라면 계속 앞으로 가고 큰수는 한칸씩 뒤로 미룬다.
+	//풀이
+	//
+
+
 	}
 }
 
