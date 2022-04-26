@@ -40,6 +40,12 @@ public class 긴급점검2 {
 		//번외
 		System.out.println(d.className);
 		System.out.println(Dw.count().count);
+
+
+        Dw dw = Dw.getInstance();
+        // Dw클래스에있는 메소드getInstance은 클래스가 public이 아니기 때문에 클래스명을 명시해주어야 한다.
+        System.out.println(dw.className);
+        System.out.println(dw.studentName);
 	}
 	
 

@@ -1,0 +1,84 @@
+// 자바스크립트 or 자바 선택해서 풀 것! // 버블정렬을 이용하여 오름차순으로
+정렬하고 총 몇회전 했는지 알아내시오.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // let var 차이점
+      // 변수이름은 중복이 되면 안되지만
+      // var를 이용하면 변수를 중복되게 만들 수 있다.
+      // ex) var name = "ryugeunhwan"
+      //     var name = "ryugeunhwan"
+      //    가능 O
+      // let은 변수이름이 중복되게 만들 수 없다.
+      // ex) let name = "ryugeunhwan"
+      //     let name = "ryugeunhwan"
+      //    불가능 X
+
+      let array = [1, 10, 4, 3, 5];
+      let count = 0;
+      let temp = 0;
+      let iSize = array.length;
+      let jSize = array.length - 1;
+
+      // 방법1. 새로운 방법
+      for (var i = 0; i < iSize; i++) {
+        for (var j = 0; j < jSize - i; j++) {
+          if (array[j] > array[j + 1]) {
+            temp = array[j];
+            //	비교한 수 중에 큰수를 temp에 대입하여 잠깐 빼준다는 개념.
+            array[j] = array[j + 1];
+            //	비교한 수 중에 작은 수를 array[j]에 대입하여 앞으로 보냄
+            array[j + 1] = temp;
+            // 	비교한 수 중에 큰 수를 array[j + 1]에 대입하여 뒤로 보냄
+            count++;
+            //	1회전이 끝나면 가장 큰수는 맨뒤로 감.
+            //	i++ i가1씩 증가 할때마다 큰 수들을 뒤로 감.
+          }
+        }
+      }
+      console.log(array);
+      console.log('회전 수 = ' + count);
+
+      //
+      //
+      //
+      //
+      //   방법2. 기존 방법
+      //   for (var i = 1; i < iSize; i++) {
+      //     for (var j = 0; j < jSize; j++) {
+      //       if (array[i] < array[j]) {
+      //         count++;
+      //         temp = array[i];
+      //         // 배열 중 작은 수를 temp에 대입
+      //         array[i] = array[j];
+      //         // 배열 중 큰 수를 뒤로 빼기
+      //         array[j] = temp;
+      //         // 작은 수를 앞으로 보내기
+      //       }
+      //     }
+      //   }
+      //   console.log('몇번 돌았는가? ' + count);
+
+      //   for (var i = 0; i < iSize; i++) {
+      //     if (i == jSize) {
+      //       console.log(array[i]);
+      //       break;
+      //       // 마지막 배열순서일 때 쉼표 없이 break
+      //     }
+      //     console.log(array[i] + ',');
+      //   }
+    </script>
+  </body>
+</html>
