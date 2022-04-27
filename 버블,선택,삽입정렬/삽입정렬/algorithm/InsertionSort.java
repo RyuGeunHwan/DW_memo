@@ -65,34 +65,33 @@ public class 삽입정렬 {
 	}
 }
 
-
-
-
-// while문 사용한 삽입정렬 예제
+// 이중for문 사용한 삽입정렬 예제
 package 삽입정렬;
 
 public class 삽입정렬 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int array[] = {8, 5, 6, 2, 4};
-        // 첫 번째 값은 정렬이 됐다고 생각하고 두 번째 인덱스 부터 정렬 시작
-       for (int i = 0; i < array.length; i++) {
-            // 현재 정렬대상 값
-            int temp = array[i];
-            // 1. 이미 정렬된 배열에서 현재 정렬대상 값이 삽입될 위치(인덱스)를 찾는다.
-            // 2. 현재 정렬대상 값보다 큰 값은 뒤로 한 칸식 이동된다.
-            while( (i > 0) && (array[i - 1] > temp) ) {
-                array[i] = array[i -1];
-                i--;
-            }
+	int[] arr = {8, 5, 6, 2, 4};
 
-            // 삽입될 위치에 temp 삽입
-            array[i] = temp;
-        }
-       for(int i=0; i<array.length; i++) {
-    	   System.out.println(array[i]);
-       }
+	int key = 0;
+	int count=0;//회전수체크
+	for(int i=1; i<arr.length;++i) {
+		++count;
+		key = arr[i];//index값을 key값으로 대입
+		int j= i-1;//2중포문 j의값을 i-1로줌(밑의 바꿀배열값(비교대상))
+		for(j=i-1;j>=0;--j) {
+			if(key<arr[j]) {//key(index)값보다 j의 값이 클경우
+				arr[j+1] = arr[j];//옆으로 밀어준다
+			}else {//아닐시 멈춘다(가장큰숫자가 되는것을멈춘다)
+				break;
+			}
+		}
+		arr[j+1] = key;//작은 값에 key(삽입될 index)값을 대입
+	}
+	//for-each문
+	for(int i: arr) {
+		System.out.println(i);
+	}
     }
 }
 
