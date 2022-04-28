@@ -14,7 +14,8 @@
 
 8. *** 인터페이스도 추상화와 같이 인스턴스화(new 호출) 불가능.
 	7-1) ***인터페이스는 인스턴스화할 수 없지만 인터페이스를 상속받은 클래스(서브클래스)를 이용하면 인스턴스화가 가능하다.
-	ex) UserServiceImple(인터페이스) service = new UserService()(interface인 UserServiceImple을 상속받는 클래스);
+	ex) UserServiceImple(인터페이스) service = new UserService()(UserService는 interface인 UserServiceImple을 상속받는 클래스);
+		(부모는 자식을 포함시킬 수 있기 때문에 타입을 UserServiceImple로 할 수 있는 것.)
 		(인터페이스명 뒤에는 "Imple" or "Impl"이라는 단어를 붙여 준다.)
 
 9. 어떠한 클래스가 인터페이스를 상속할 경우에는 extends가 아니라 implements라는 키워드 사용!
@@ -23,6 +24,10 @@
 11. 클래스가 다른 클래스를 상속하면서 인터페이스를 구현(상속)하는 것도 가능하다.
 	11-1) 이럴 경우에는 클래스를 상속하는 extends먼저 선언 후 다음으로 implements를 선언한다.
 	ex) public class1 extends class2 implements interfaceImple
+12. 인터페이스가 인터페이스를 상속할 경우에는 implements가 아닌 extends를 사용.
+ex) 인터페이스가 인터페이스를 상속할 때 : public interface B extends A (A class도 interface)
+	어떠한 클래스가 인터페이스를 상속할 때 : public class C implements A,B
+	(interface는 다중상속 가능!, interface A,B의 메소드를 C에서 오버라이딩!(무적권!!!))
 ```
 
 ## 인터페이스 메소드 규칙
