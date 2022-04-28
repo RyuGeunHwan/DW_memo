@@ -10,18 +10,45 @@
 4. 인터페이스 안에 있는 모든 메소드는 모두 추상메소드(public abstract : 생략가능)이다.
 5. 인터페이스 안에 있는 모든 필수 변수는 public static final 이어야하며, 생략할 수 있다.
 6. 추상메소드는 public이어야 한다.(private X)
+7. 인터페이스 안에 메소드는 로직을 구현하지 않는다. (선언부만 작성)
 
-7. *** 인터페이스도 인스턴스화(new 호출) 불가능.
+8. *** 인터페이스도 추상화와 같이 인스턴스화(new 호출) 불가능.
 	7-1) ***인터페이스는 인스턴스화할 수 없지만 인터페이스를 상속받은 클래스(서브클래스)를 이용하면 인스턴스화가 가능하다.
 	ex) UserServiceImple(인터페이스) service = new UserService()(interface인 UserServiceImple을 상속받는 클래스);
-		(인터페이스명 뒤에는 "Imple"이라는 단어를 붙여 준다.)
+		(인터페이스명 뒤에는 "Imple" or "Impl"이라는 단어를 붙여 준다.)
 
-8. 어떠한 클래스가 인터페이스를 상속할 경우에는 extends가 아니라 implements라는 키워드 사용!
+9. 어떠한 클래스가 인터페이스를 상속할 경우에는 extends가 아니라 implements라는 키워드 사용!
 	단, 인터페이스끼리 상속을 할 경우에는 일반클래스끼리 상속할 때 처럼 extends를 사용한다!
-9. 인터페이스의 접근지정자는 아예 없거나 public이거나 아님 abstract만 가능하다.
-10. 클래스가 다른 클래스를 상속하면서 인터페이스를 구현(상속)하는 것도 가능하다.
-	10-1) 이럴 경우에는 클래스를 상속하는 extends먼저 선언 후 다음으로 implements를 선언한다.
+10. 인터페이스의 접근지정자는 아예 없거나 public이거나 아님 abstract만 가능하다.
+11. 클래스가 다른 클래스를 상속하면서 인터페이스를 구현(상속)하는 것도 가능하다.
+	11-1) 이럴 경우에는 클래스를 상속하는 extends먼저 선언 후 다음으로 implements를 선언한다.
 	ex) public class1 extends class2 implements interfaceImple
+```
+
+## 인터페이스 메소드 규칙
+
+```
+ 1) 규칙이기 때문에 무조건 공개 메서드이고 추상 메서드이다.
+   public abstract void m1();
+2) public을 생략해도 내부적으로 public으로 간주한다.
+  abstract void m2();
+3) abstract를 생략해도 내부적으로 abstract로 간주한다.
+  void m3();
+ 4) 절대 구현 메서드를 가질 수 없다.
+   void m4() {} // 컴파일 오류!
+```
+
+## 인터페이스 필드변수 규칙
+
+```
+1) 규칙이기 때문에 무조건 공개 필드이고, 스태틱 필드이다. 그리고 값을 바꿀 수 없는 상수 필드이다.
+   public static final int v1 = 200;
+2) public을 생략하면 내부적으로 public으로 간주한다.
+  static final int v2 = 200;
+3) static을 새약하면 내부적으로 static으로 간주한다.
+  final int v3 = 200;
+4) final을 생략하면 내부적으로 final로 간주한다.
+  int v4 = 200;
 ```
 
 ```
