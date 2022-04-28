@@ -11,7 +11,7 @@
     why? static은 공유를 목적으로 하기 때문에 static을 참고하는 변수or메소드들의 값들이 전부 바뀌기 때문에.
 6. 메소드 이름이 "getInstance"라면 해당 메소드(getInstance)에서 객체를 호출 한다라는 것을 알 수 있다.
 7. static으로 메소드를 선언하여 객체를 호출하게 되면 다른클래스에서도 호출한 해당 클래스를 다시 호출 할 필요 없이 해당 메소드로 공유 가능!
-8. 값이 상수인 변수를 선언할 경우 => private static final 타입 변수명(대문자);
+8. 값이 상수인 변수를 선언할 경우 => private static final 데이터타입 변수명(대문자) = 값; (변하지 않는 값이기 때문에 값은 무조건 넣어주어야 한다.)
 9. private static 변수 or 메소드
     9-1) 같은 클래스 내부에서만 사용하면 되는 변수 or 메소드를 선언 할경우 private static 이용!
     (TIP. private을 사용하는 함수(public함수)가 static이라면 private함수도 static이어야 한다.)
