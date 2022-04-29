@@ -34,6 +34,8 @@ public class 선택정렬 {
 					isChange = true; // 최솟값이 있음!
 				}
 			}// j for end
+			if(!isChange) continue;
+			// continue => 답이 나왔으면 다음for문 실행하지말고 다음 for문으로 넘겨라는 함수!
 			if(isChange) {// 최솟값이 있다면 if문 실행!
 				int temp = array[i];
 				array[i] = min;
