@@ -28,8 +28,8 @@ public class EmpMain {
 		for(int i=0; i<list.size(); i++) {
 			for(int j=0; j<service.setDept(emp).getList().size(); j++) {
 				if(list.get(i).getList() != null) {
-					int deptNo = list.get(i).getList().get(j).getDeptno();
-					String dName = list.get(i).getList().get(j).getDname();
+					int deptNo = emp.getList().get(j).getDeptno();
+					String dName = emp.getList().get(j).getDname();
 				System.out.println("문제4. "+list.get(i).getEname()+","+deptNo+","+dName);
 			}
 			}
