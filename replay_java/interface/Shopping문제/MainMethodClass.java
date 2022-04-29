@@ -35,12 +35,17 @@ public class MainMethodClass {
 		
 		//7. 특정 회원에게 상품구매 발생.
 		//   구매한 상품의 가격 5%가 포인트로 지급. 
-//		ProductVO vo = new ProductVO();
-		shopping.getPurchaseRankerUser(userList, new ProductVO("헤드셋", 1000), 150);
-		shopping.getPurchaseRankerUser(userList, new ProductVO("전기장판", 5000), 120);
-		shopping.getPurchaseRankerUser(userList, new ProductVO("간식", 6000), 110);
+		ProductVO vo = new ProductVO("헤드셋", 1000);
+		shopping.getPurchaseRankerUser(userList, vo, 150);
+//		shopping.getPurchaseRankerUser(userList, new ProductVO("전기장판", 5000), 120);
+//		shopping.getPurchaseRankerUser(userList, new ProductVO("간식", 6000), 110);
 		//8. 구매이력이 있는 회원만 조회.
 		// 함수 getUserList에 풀기
 		shopping.getUserList(userList);
-	}
+		for(UserVO list : userList) {
+			if(list.getList()!=null) {
+				System.out.println("구매이력이 있는 사람 => "+list.getUserName());
+			}
+		}
+}
 }

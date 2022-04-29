@@ -14,12 +14,10 @@ public class ShoppingService implements ShoppingServiceImpl{
 	@Override
 	public List<UserVO> getUserList(List<UserVO> list) {
 		List<ProductVO> pvoList = new ArrayList<ProductVO>();
-		ProductVO pvo = new ProductVO("자전거",10000);
-		pvoList.add(pvo);
-		System.out.println(pvoList.get(0).getPrice());
-		for(int i=0; i<list.size(); i++) {
-		}
-		return null;
+		ProductVO pvo1 = new ProductVO("자전거",10000);
+		pvoList.add(pvo1);
+		list.get(2).setList(pvoList); // pvo1를 구매한 사람은 userList의 index 2번째인 사람
+		return list;
 	}
 
 	@Override
