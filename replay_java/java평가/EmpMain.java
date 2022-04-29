@@ -24,11 +24,16 @@ public class EmpMain {
 		//3번. 사원 중 급여를 300이하로 받고 있는 사원 수를 구하시오.
 		System.out.println("문제3. "+service.getCount(list, 300)+"명");
 		//4번. 특정 사원에 부서번호 10, 부서이름 SALES 부서를 추가하고 사원을 리턴하시오.
-		EmpVO emp = service.setDept(list.get(2));
-		for(EmpVO e : list) {
-			if(e.getList() != null) {
-				System.out.println("문제4. "+e.getEname());
+		EmpVO emp = service.setDept(list.get(3));
+		for(int i=0; i<list.size(); i++) {
+			for(int j=0; j<service.setDept(emp).getList().size(); j++) {
+				if(list.get(i).getList() != null) {
+					int deptNo = list.get(i).getList().get(j).getDeptno();
+					String dName = list.get(i).getList().get(j).getDname();
+				System.out.println("문제4. "+list.get(i).getEname()+","+deptNo+","+dName);
+			}
 			}
 		}
 	}
 }
+	
