@@ -69,7 +69,7 @@
 
 ```
 1. 자동pull 막아주는 명령어
-**git config --global pull.rebase true
+** git config --global pull.rebase true
     1-1) 깜빡하고 코딩을 먼저 해버렸을 경우 git 해당 명령어 사용
     1-2) 기존pull은 pull하면 자동으로 받아짐.
     1-3) 자동으로 pull받아지면 작업한 코드에 덮어쓰기가 되어버림.(주의)
