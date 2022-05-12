@@ -5,7 +5,7 @@
 # Hash -> entry,set,get,values,iterator(순차검색) 구글링해보기!
 
 ```
-1. Hash란?
+1. Map이란?
     key와 Value()로 이루어진 자료구조(json하고 같음)
     key 중복X
 ```
