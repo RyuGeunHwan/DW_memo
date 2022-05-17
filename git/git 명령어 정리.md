@@ -83,9 +83,10 @@
 깃 최초 설치 시 입력해야하는 명령어
 
 1. SSH 키 생성
-    => ssh-keygen -t rsa -C "이메일 입력"
-    * 키 생성 경로 C:\Users\사용자이름\.ssh
-    .pub파일로 저장
+   => ssh-keygen -t rsa -C "이메일 입력"
+
+   - 키 생성 경로 C:\Users\사용자이름\.ssh
+     .pub파일로 저장
 
 2. github 사용자이름, 이메일 등록
     => git config --global user.name "사용자 이름 입력"
