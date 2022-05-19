@@ -1,4 +1,4 @@
-# CHECK
+# CHECK문
 
 ```sql
 1. COLUMN에 들어갈 수 있는 값을 제한
